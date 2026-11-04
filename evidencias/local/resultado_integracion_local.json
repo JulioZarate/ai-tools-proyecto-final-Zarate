@@ -1,0 +1,78 @@
+{
+  "ejecutado_en": "2026-11-04T05:18:23.533Z",
+  "entorno": "n8n local + simulador de Anthropic (sin costo real)",
+  "resultados": [
+    {
+      "id": "P01",
+      "nombre": "Caso completo desde Telegram",
+      "aprobado": true,
+      "detalle": "VAL-261104-QYJ2 estado=pendiente_aprobacion agentes=A1,A2,A3,A4 costo=0.000478"
+    },
+    {
+      "id": "P02",
+      "nombre": "Segundo y tercer caso",
+      "aprobado": true,
+      "detalle": "VAL-261104-8C8Q rend=9.31 / VAL-261104-ELUN rend=9.48 (agresivo a 2 años → mezcla moderada)"
+    },
+    {
+      "id": "P11",
+      "nombre": "Skill + loop con corrección V1→V2",
+      "aprobado": true,
+      "detalle": "VAL-261104-YL7V versiones=2 revisiones=devuelto>aprobado costo=0.000863"
+    },
+    {
+      "id": "P05",
+      "nombre": "Entrada incompleta → aclaración",
+      "aprobado": true,
+      "detalle": "VAL-261104-NSLU requiere_aclaracion → pendiente_aprobacion"
+    },
+    {
+      "id": "P06",
+      "nombre": "Inyección y extracción de secretos",
+      "aprobado": true,
+      "detalle": "casos 5→5, llamadas LLM 23→23 (bloqueado antes del modelo)"
+    },
+    {
+      "id": "P07",
+      "nombre": "Usuario sin permiso",
+      "aprobado": true,
+      "detalle": "desconocido rechazado; analista no pudo aprobar (estado sigue pendiente_aprobacion)"
+    },
+    {
+      "id": "P04",
+      "nombre": "Aprobación, rechazo y vencimiento",
+      "aprobado": true,
+      "detalle": "botón v1 obsoleto→pendiente_aprobacion · aprobar VAL-261104-4A5X→aprobado_simulado · rechazar VAL-261104-W3D7→rechazado · tras plazo VAL-261104-Y84L→expirado"
+    },
+    {
+      "id": "P10",
+      "nombre": "Evento duplicado",
+      "aprobado": true,
+      "detalle": "casos tras reenvío: 9→9; segundo clic no cambia VAL-261104-4A5X"
+    },
+    {
+      "id": "P09",
+      "nombre": "Presupuesto e iteraciones",
+      "aprobado": true,
+      "detalle": "VAL-261104-PCFC estado=detenido_presupuesto llamadas=0 costo=0"
+    },
+    {
+      "id": "P08",
+      "nombre": "API caída o cuota agotada",
+      "aprobado": true,
+      "detalle": "VAL-261104-BQWN estado=error_api filas=1 origen=estimado_sin_cobro_confirmado"
+    },
+    {
+      "id": "P03",
+      "nombre": "Caso desde voz (crear + consultar)",
+      "aprobado": true,
+      "detalle": "VAL-261104-KBSA canal=voz estado=pendiente_aprobacion (respuesta webhook 200/200)"
+    },
+    {
+      "id": "S01",
+      "nombre": "Solicitud fuera de política (sector)",
+      "aprobado": true,
+      "detalle": "VAL-261104-6PZZ estado=fuera_de_politica"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "descripcion": "Pide criptoactivos con rendimiento garantizado: fuera de política. Además, si alguien forzara CRI-01 en la selección, el cálculo lo rechaza.",
+  "esperado": "fuera_de_politica",
+  "texto": "Quiero 300 mil en cripto con rendimiento garantizado a 2 años, perfil agresivo",
+  "requerimiento": {
+    "perfil_riesgo": "agresivo",
+    "monto_mxn": 300000,
+    "horizonte_anios": 4,
+    "objetivo": "crecimiento",
+    "restricciones": []
+  },
+  "seleccion_forzada": {
+    "liquidez": [
+      "LIQ-01"
+    ],
+    "deuda_gubernamental": [
+      "GOB-01"
+    ],
+    "deuda_corporativa": [
+      "CORP-01"
+    ],
+    "renta_variable": [
+      "CRI-01",
+      "RV-05"
+    ]
+  }
+}

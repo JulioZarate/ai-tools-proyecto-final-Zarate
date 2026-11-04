@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "valoria/contrato_entrada",
+  "title": "Entrada común a orquestador y agentes",
+  "description": "Estado del caso que el orquestador pasa a cada agente (campo st en los nodos Code). Solo texto enmascarado; nunca IDs reales de Telegram.",
+  "type": "object",
+  "required": ["caso_id", "canal", "usuario_ps", "objetivo", "datos", "modo", "limite_costo_usd"],
+  "properties": {
+    "caso_id": {"type": "string", "pattern": "^VAL-\\d{6}-[A-Z0-9]{4}$"},
+    "canal": {"enum": ["telegram", "voz"]},
+    "usuario_ps": {"type": "string", "description": "Seudónimo u_<hash> o voz_publica"},
+    "objetivo": {"type": "string", "description": "Tarea del agente (intake, seleccion, redaccion, revision)"},
+    "datos": {"type": "object", "description": "texto enmascarado, requerimiento, elegibles, calculo o redaccion según el agente"},
+    "modo": {"const": "SIMULADO"},
+    "limite_costo_usd": {"type": "number", "exclusiveMinimum": 0, "maximum": 0.02},
+    "version_propuesta": {"type": "integer", "minimum": 0},
+    "iteracion": {"type": "integer", "minimum": 0, "maximum": 3},
+    "correcciones": {"type": "array", "items": {"type": "string"}}
+  }
+}

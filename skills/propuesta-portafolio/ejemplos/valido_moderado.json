@@ -1,0 +1,29 @@
+{
+  "descripcion": "Caso válido: debe producir propuesta con suma 100% y sin errores.",
+  "esperado": "valido",
+  "requerimiento": {
+    "perfil_riesgo": "moderado",
+    "monto_mxn": 250000,
+    "horizonte_anios": 5,
+    "objetivo": "retiro",
+    "restricciones": [
+      "solo_esg"
+    ]
+  },
+  "seleccion_agente2": {
+    "liquidez": [
+      "LIQ-01",
+      "LIQ-02"
+    ],
+    "deuda_gubernamental": [
+      "GOB-03"
+    ],
+    "deuda_corporativa": [
+      "CORP-02"
+    ],
+    "renta_variable": [
+      "RV-02",
+      "RV-04"
+    ]
+  }
+}

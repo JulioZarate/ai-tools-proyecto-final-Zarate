@@ -1,0 +1,5 @@
+{
+  "usuarios": { "123456789": "asesor", "987654321": "analista" },
+  "asesor_chat_id": "123456789",
+  "pages_base_url": "https://juliozarate.github.io/ai-tools-proyecto-final-Zarate"
+}

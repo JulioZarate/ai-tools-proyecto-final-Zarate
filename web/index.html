@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valoria · Panel de propuestas informativas (ficticio)</title>
+  <meta name="description" content="Panel del proyecto final de AI Tools: casos de propuestas informativas de portafolio de una casa de bolsa ficticia, procesados por un orquestador y cuatro agentes.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-agent-id="REEMPLAZAR_AGENT_ID_ELEVENLABS" data-telegram-bot="REEMPLAZAR_USUARIO_BOT">
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+  <div class="banda-ficticio" role="note"><strong>Datos ficticios · modo SIMULADO.</strong> Valoria es una empresa inventada; nada aquí es una recomendación de inversión.</div>
+
+  <header class="cabecera">
+    <div>
+      <p class="sobretitulo">Valoria Casa de Bolsa <span class="etiqueta">ficticia</span></p>
+      <h1 id="titulo-afirmativo">Panel de propuestas informativas</h1>
+      <p class="proposito">Propósito: que el asesor decida qué propuestas aprobar y vigile calidad, tiempos y costo del proceso de 4 agentes.</p>
+    </div>
+    <dl class="meta" aria-label="Metadatos del panel">
+      <div><dt>Periodo</dt><dd id="meta-periodo">—</dd></div>
+      <div><dt>Actualizado</dt><dd id="meta-actualizado">—</dd></div>
+      <div><dt>Fuente</dt><dd id="meta-fuente">—</dd></div>
+    </dl>
+  </header>
+
+  <div id="aviso-estado" class="aviso" role="status" aria-live="polite">Cargando datos…</div>
+
+  <main id="principal">
+    <section aria-labelledby="h-kpis">
+      <h2 id="h-kpis" class="visualmente-oculto">Indicadores clave</h2>
+      <div class="kpis">
+        <article class="kpi" aria-describedby="def-k1">
+          <p class="kpi-etiqueta">Aprobadas en 1.ª revisión</p>
+          <p class="kpi-valor" id="k1">—</p>
+          <p class="kpi-contexto" id="k1-ctx">—</p>
+          <p class="kpi-def" id="def-k1">Casos cuya primera revisión del Agente 4 fue «aprobado» ÷ casos que llegaron al Agente 4. Meta de referencia: ≥ 80%.</p>
+        </article>
+        <article class="kpi" aria-describedby="def-k2">
+          <p class="kpi-etiqueta">Ciclo hasta decisión del asesor</p>
+          <p class="kpi-valor" id="k2">—</p>
+          <p class="kpi-contexto" id="k2-ctx">—</p>
+          <p class="kpi-def" id="def-k2">Mediana de (decidido_en − creado_en) en casos aprobados o rechazados. Unidad: minutos. Plazo de aprobación: 30 min.</p>
+        </article>
+        <article class="kpi" aria-describedby="def-k3">
+          <p class="kpi-etiqueta">Costo de IA por caso completado</p>
+          <p class="kpi-valor" id="k3">—</p>
+          <p class="kpi-contexto" id="k3-ctx">—</p>
+          <p class="kpi-def" id="def-k3">Σ costo_usd de casos que llegaron a decisión o la esperan ÷ número de esos casos. Los fallidos se reportan aparte.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="filtros" aria-labelledby="h-filtros">
+      <h2 id="h-filtros">Filtros</h2>
+      <form id="form-filtros" class="filtros-grid">
+        <label>Estado <select id="f-estado"><option value="">Todos</option></select></label>
+        <label>Canal <select id="f-canal"><option value="">Todos</option><option value="telegram">Telegram</option><option value="voz">Voz</option></select></label>
+        <label>Perfil <select id="f-perfil"><option value="">Todos</option><option>conservador</option><option>moderado</option><option>agresivo</option></select></label>
+        <label>Folio <input id="f-folio" type="search" placeholder="VAL-AAMMDD-XXXX" autocomplete="off" inputmode="text" maxlength="15"></label>
+        <button type="reset" id="btn-reset">Restablecer</button>
+      </form>
+      <p class="filtros-resumen" id="filtros-resumen" aria-live="polite"></p>
+    </section>
+
+    <div class="grid-2">
+      <section class="tarjeta" aria-labelledby="h-estados">
+        <h2 id="h-estados">¿Dónde terminan los casos?</h2>
+        <p class="subtitulo" id="sub-estados">Casos por estado final. Azul: llegaron a propuesta o decisión · gris: los detuvo un control · naranja: falla técnica.</p>
+        <div id="graf-estados" class="grafica"></div>
+        <details><summary>Ver como tabla</summary><div id="tabla-estados"></div></details>
+      </section>
+      <section class="tarjeta" aria-labelledby="h-agentes">
+        <h2 id="h-agentes">¿Qué agente consume más?</h2>
+        <p class="subtitulo">Costo de IA acumulado por agente (USD) en los casos filtrados. Los controles sin modelo no consumen tokens.</p>
+        <div id="graf-agentes" class="grafica"></div>
+        <details><summary>Ver como tabla</summary><div id="tabla-agentes"></div></details>
+      </section>
+    </div>
+
+    <section class="tarjeta" aria-labelledby="h-detalle">
+      <h2 id="h-detalle">Historial sanitizado</h2>
+      <p class="subtitulo">Sin nombres, chats ni textos de las solicitudes. Monto en rangos.</p>
+      <div class="tabla-scroll" tabindex="0" role="region" aria-labelledby="h-detalle">
+        <table id="tabla-casos">
+          <caption class="visualmente-oculto">Casos ordenados del más reciente al más antiguo</caption>
+          <thead><tr>
+            <th scope="col">Folio</th><th scope="col">Canal</th><th scope="col">Estado</th><th scope="col">Perfil</th><th scope="col">Monto</th>
+            <th scope="col" class="num">Versión</th><th scope="col">Agentes</th><th scope="col" class="num">Rend. ilustr.</th><th scope="col" class="num">Costo USD</th><th scope="col">Creado (UTC)</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="tarjeta voz" aria-labelledby="h-voz">
+      <h2 id="h-voz">Consulta por voz con Andrea (asistente de IA)</h2>
+      <p>Andrea es un <strong>agente de inteligencia artificial</strong> de ElevenLabs. Puede <strong>consultar el estado de un folio</strong> o <strong>crear un caso de prueba</strong> en el mismo registro que usa Telegram. Solo maneja datos ficticios; no des datos personales. Las decisiones las toma un asesor humano.</p>
+      <div id="voz-consentimiento">
+        <label class="check"><input type="checkbox" id="voz-acepto"> Entiendo que hablaré con una IA, que la conversación se procesa en ElevenLabs y que es una demostración con datos ficticios.</label>
+        <button type="button" id="btn-voz" disabled>Activar asistente de voz</button>
+      </div>
+      <div id="voz-contenedor" hidden></div>
+      <div id="voz-alternativa" class="alternativa" hidden>
+        <p><strong>No fue posible usar la voz.</strong> <span id="voz-motivo"></span></p>
+        <p>Alternativas: consulta el folio en la tabla de arriba (campo «Folio») o escribe <code>/estado VAL-AAMMDD-XXXX</code> al bot de Telegram del proyecto<span id="voz-bot"></span>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p><strong>Fuente:</strong> <span id="pie-fuente">—</span>. <strong>Corte:</strong> <span id="pie-corte">—</span>. Actualización: exportación sanitizada del registro privado (n8n Data Tables) → commit → GitHub Actions valida y publica.</p>
+    <p>Proyecto final individual · AI Tools (Dra. Elda C. Morales) · Julio Alejandro Zárate García · Resultado simulado; no constituye una recomendación.</p>
+  </footer>
+
+  <script src="assets/kpis.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

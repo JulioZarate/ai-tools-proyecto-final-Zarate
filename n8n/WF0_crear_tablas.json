@@ -1,0 +1,447 @@
+{
+  "name": "Valoria — 0 · Crear tablas",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "valoria-ejecutar-una-vez",
+      "name": "Ejecutar una vez",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "create",
+        "tableName": "valoria_casos",
+        "columns": {
+          "column": [
+            {
+              "name": "caso_id",
+              "type": "string"
+            },
+            {
+              "name": "canal",
+              "type": "string"
+            },
+            {
+              "name": "usuario_ps",
+              "type": "string"
+            },
+            {
+              "name": "estado",
+              "type": "string"
+            },
+            {
+              "name": "version_propuesta",
+              "type": "number"
+            },
+            {
+              "name": "texto_solicitud",
+              "type": "string"
+            },
+            {
+              "name": "perfil_riesgo",
+              "type": "string"
+            },
+            {
+              "name": "monto_mxn",
+              "type": "number"
+            },
+            {
+              "name": "horizonte_anios",
+              "type": "number"
+            },
+            {
+              "name": "restricciones",
+              "type": "string"
+            },
+            {
+              "name": "requerimiento_json",
+              "type": "string"
+            },
+            {
+              "name": "propuesta_json",
+              "type": "string"
+            },
+            {
+              "name": "revision_json",
+              "type": "string"
+            },
+            {
+              "name": "resumen",
+              "type": "string"
+            },
+            {
+              "name": "iteraciones",
+              "type": "number"
+            },
+            {
+              "name": "llamadas",
+              "type": "number"
+            },
+            {
+              "name": "costo_usd",
+              "type": "number"
+            },
+            {
+              "name": "limite_costo_usd",
+              "type": "number"
+            },
+            {
+              "name": "creado_en",
+              "type": "string"
+            },
+            {
+              "name": "actualizado_en",
+              "type": "string"
+            },
+            {
+              "name": "aprobacion_expira_en",
+              "type": "string"
+            },
+            {
+              "name": "decision",
+              "type": "string"
+            },
+            {
+              "name": "decidido_por",
+              "type": "string"
+            },
+            {
+              "name": "decidido_en",
+              "type": "string"
+            },
+            {
+              "name": "motivo",
+              "type": "string"
+            },
+            {
+              "name": "demo",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "createIfNotExists": true
+        }
+      },
+      "id": "valoria-crear-valoria-casos",
+      "name": "Crear valoria_casos",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        240,
+        0
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "create",
+        "tableName": "valoria_eventos",
+        "columns": {
+          "column": [
+            {
+              "name": "evento_id",
+              "type": "string"
+            },
+            {
+              "name": "caso_id",
+              "type": "string"
+            },
+            {
+              "name": "canal",
+              "type": "string"
+            },
+            {
+              "name": "tipo",
+              "type": "string"
+            },
+            {
+              "name": "ruta",
+              "type": "string"
+            },
+            {
+              "name": "usuario_ps",
+              "type": "string"
+            },
+            {
+              "name": "recibido_en",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "createIfNotExists": true
+        }
+      },
+      "id": "valoria-crear-valoria-eventos",
+      "name": "Crear valoria_eventos",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        480,
+        0
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "create",
+        "tableName": "valoria_costos",
+        "columns": {
+          "column": [
+            {
+              "name": "fecha_hora",
+              "type": "string"
+            },
+            {
+              "name": "caso_id",
+              "type": "string"
+            },
+            {
+              "name": "llamada_id",
+              "type": "string"
+            },
+            {
+              "name": "etapa",
+              "type": "string"
+            },
+            {
+              "name": "agente",
+              "type": "string"
+            },
+            {
+              "name": "proveedor",
+              "type": "string"
+            },
+            {
+              "name": "modelo",
+              "type": "string"
+            },
+            {
+              "name": "tokens_entrada",
+              "type": "number"
+            },
+            {
+              "name": "tokens_salida",
+              "type": "number"
+            },
+            {
+              "name": "tokens_cache",
+              "type": "number"
+            },
+            {
+              "name": "duracion_voz_seg",
+              "type": "number"
+            },
+            {
+              "name": "unidad_cobro",
+              "type": "string"
+            },
+            {
+              "name": "tarifa_entrada",
+              "type": "number"
+            },
+            {
+              "name": "tarifa_salida",
+              "type": "number"
+            },
+            {
+              "name": "costo_usd",
+              "type": "number"
+            },
+            {
+              "name": "moneda",
+              "type": "string"
+            },
+            {
+              "name": "estado",
+              "type": "string"
+            },
+            {
+              "name": "reintento",
+              "type": "number"
+            },
+            {
+              "name": "origen_dato",
+              "type": "string"
+            },
+            {
+              "name": "iteracion",
+              "type": "number"
+            },
+            {
+              "name": "duracion_ms",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {
+          "createIfNotExists": true
+        }
+      },
+      "id": "valoria-crear-valoria-costos",
+      "name": "Crear valoria_costos",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        720,
+        0
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "operation": "create",
+        "tableName": "valoria_traza",
+        "columns": {
+          "column": [
+            {
+              "name": "caso_id",
+              "type": "string"
+            },
+            {
+              "name": "paso",
+              "type": "number"
+            },
+            {
+              "name": "agente",
+              "type": "string"
+            },
+            {
+              "name": "accion",
+              "type": "string"
+            },
+            {
+              "name": "estado",
+              "type": "string"
+            },
+            {
+              "name": "entrada_resumen",
+              "type": "string"
+            },
+            {
+              "name": "salida_resumen",
+              "type": "string"
+            },
+            {
+              "name": "skill",
+              "type": "string"
+            },
+            {
+              "name": "version_skill",
+              "type": "string"
+            },
+            {
+              "name": "huella_skill",
+              "type": "string"
+            },
+            {
+              "name": "llamada_id",
+              "type": "string"
+            },
+            {
+              "name": "version_propuesta",
+              "type": "number"
+            },
+            {
+              "name": "iteracion",
+              "type": "number"
+            },
+            {
+              "name": "timestamp",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "createIfNotExists": true
+        }
+      },
+      "id": "valoria-crear-valoria-traza",
+      "name": "Crear valoria_traza",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        960,
+        0
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "content": "## Paso 0 · Crear tablas\nEjecuta este workflow UNA vez (botón Execute). Crea las 4 Data Tables con sus columnas. Si ya existen, las reutiliza.",
+        "height": 180,
+        "width": 420
+      },
+      "id": "valoria-nota",
+      "name": "Nota",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -240
+      ]
+    }
+  ],
+  "connections": {
+    "Ejecutar una vez": {
+      "main": [
+        [
+          {
+            "node": "Crear valoria_casos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crear valoria_casos": {
+      "main": [
+        [
+          {
+            "node": "Crear valoria_eventos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crear valoria_eventos": {
+      "main": [
+        [
+          {
+            "node": "Crear valoria_costos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crear valoria_costos": {
+      "main": [
+        [
+          {
+            "node": "Crear valoria_traza",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {},
+  "tags": []
+}

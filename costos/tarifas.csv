@@ -1,0 +1,14 @@
+concepto,proveedor,unidad,valor,moneda,fuente,fecha_consulta,nota
+llm_entrada,Anthropic,USD por millón de tokens (prompt ≤100k),0.10,USD,"Precio de lista de Claude Haiku 5.5 reportado por la página de precios de Anthropic (citado en letsdatascience.com y mixed-news.com, oct-2026). Verificar en https://platform.claude.com/docs/en/about-claude/pricing",2026-11-03,claude-haiku-5-5; prompts >100k cuestan 0.50
+llm_salida,Anthropic,USD por millón de tokens (prompt ≤100k),0.50,USD,Misma fuente,2026-11-03,prompts >100k cuestan 2.50
+llm_cache_lectura,Anthropic,USD por millón de tokens,0.01,USD,devtk.ai/en/models/claude-haiku-5-5,2026-11-03,no se usa caché en el flujo actual
+voz_minuto,ElevenLabs,USD por minuto de conversación (excedente),0.08,USD,"getmacha.com y techjacksolutions.com citando elevenlabs.io/pricing/agents (sep-2026). Verificar en https://elevenlabs.io/pricing/agents",2026-11-03,LLM del agente de voz se cobra aparte
+voz_llm_minuto,ElevenLabs,USD por minuto (LLM Gemini 2.5 Flash),0.0012,USD,getmacha.com (calculadora de ElevenLabs leída 19-sep-2026),2026-11-03,depende del modelo elegido en el agente
+voz_minutos_incluidos_plan,ElevenLabs,minutos por mes incluidos en el plan del estudiante,15,min,getmacha.com (plan gratuito: 15 min),2026-11-03,CAMBIAR al plan real de tu cuenta
+n8n_starter,n8n Cloud,EUR por mes (pago mensual),24,EUR,"cloudzero.com y collab365 (re-chequeo 20-jul-2026) citando n8n.io/pricing",2026-11-03,2500 ejecuciones/mes; sin variables de entorno
+n8n_pro,n8n Cloud,EUR por mes (pago mensual),60,EUR,Misma fuente,2026-11-03,10000 ejecuciones/mes
+n8n_business,n8n,EUR por mes,800,EUR,Misma fuente,2026-11-03,40000 ejecuciones/mes; autohospedado
+github_pages_actions,GitHub,USD por mes,0,USD,"Repositorio público: Pages y minutos de Actions sin costo (docs.github.com)",2026-11-03,verificar si el repo es privado
+telegram_bot_api,Telegram,USD por mes,0,USD,core.telegram.org/bots/api,2026-11-03,no consume tokens
+tipo_cambio_mxn_usd,Banxico,MXN por USD (FIX),17.4440,MXN,"FIX DOF 28-jul-2026 (nmas.com.mx citando Banxico). ACTUALIZAR con https://www.banxico.org.mx/tipcamb/ el día de entrega",2026-11-03,último FIX encontrado al preparar el repo
+eur_usd,referencia,USD por EUR,1.08,USD,SUPUESTO para convertir planes de n8n; actualizar,2026-11-03,supuesto declarado

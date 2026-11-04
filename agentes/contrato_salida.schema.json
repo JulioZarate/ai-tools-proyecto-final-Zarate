@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "valoria/contrato_salida",
+  "title": "Salida observable de cada rol (fila de valoria_traza + fila de valoria_costos)",
+  "type": "object",
+  "required": ["caso_id", "agente", "estado", "resultado", "fuentes", "advertencias", "duracion_ms", "llamada_id"],
+  "properties": {
+    "caso_id": {"type": "string", "pattern": "^VAL-\\d{6}-[A-Z0-9]{4}$"},
+    "agente": {"enum": ["ORQ", "A1", "A2", "A3", "A4", "GUARDRAIL", "HUMANO"]},
+    "estado": {"type": "string", "description": "completo | requiere_aclaracion | fuera_de_politica | ok | devuelto | aprobado | invalido | error_api | ..."},
+    "resultado": {"type": "string", "description": "salida_resumen en la traza (≤500 caracteres)"},
+    "fuentes": {"type": "array", "items": {"type": "string"}, "description": "skill + versión + huella; catálogo VALORIA-CAT vX"},
+    "advertencias": {"type": "array", "items": {"type": "string"}},
+    "duracion_ms": {"type": "integer"},
+    "llamada_id": {"type": "string", "description": "Referencia a valoria_costos; vacío si el paso no usa LLM"},
+    "version_propuesta": {"type": "integer"},
+    "iteracion": {"type": "integer"}
+  },
+  "additionalProperties": true
+}

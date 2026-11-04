@@ -1,0 +1,14 @@
+{
+  "descripcion": "Falta el monto: el skill NO debe calcular; el caso pasa a requiere_aclaracion.",
+  "esperado": "requiere_aclaracion",
+  "faltantes_esperados": [
+    "monto_mxn"
+  ],
+  "salida_agente1": {
+    "perfil_riesgo": "conservador",
+    "monto_mxn": null,
+    "horizonte_anios": 4,
+    "objetivo": "enganche",
+    "restricciones": []
+  }
+}

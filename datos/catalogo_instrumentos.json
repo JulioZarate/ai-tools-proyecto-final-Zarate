@@ -1,0 +1,25 @@
+{
+  "catalogo_id": "VALORIA-CAT",
+  "version": "1.0.0",
+  "fuente": "Catálogo autorizado ficticio de Valoria Casa de Bolsa. Rendimientos y volatilidades son supuestos ilustrativos, no datos de mercado.",
+  "fecha_corte": "2026-10-31",
+  "datos_ficticios": true,
+  "instrumentos": [
+    {"id": "LIQ-01", "nombre": "Fondo de liquidez Valoria Día", "clase": "liquidez", "riesgo": 1, "rend_esperado_anual": 0.095, "volatilidad_anual": 0.005, "liquidez_dias": 0, "monto_min_mxn": 100, "esg": false, "extranjero": false},
+    {"id": "LIQ-02", "nombre": "Reporto gubernamental 1 día", "clase": "liquidez", "riesgo": 1, "rend_esperado_anual": 0.093, "volatilidad_anual": 0.004, "liquidez_dias": 1, "monto_min_mxn": 5000, "esg": false, "extranjero": false},
+    {"id": "GOB-01", "nombre": "Bono gubernamental tasa fija 3 años", "clase": "deuda_gubernamental", "riesgo": 1, "rend_esperado_anual": 0.090, "volatilidad_anual": 0.030, "liquidez_dias": 1, "monto_min_mxn": 1000, "esg": false, "extranjero": false},
+    {"id": "GOB-02", "nombre": "Bono gubernamental indexado a inflación 5 años", "clase": "deuda_gubernamental", "riesgo": 2, "rend_esperado_anual": 0.088, "volatilidad_anual": 0.040, "liquidez_dias": 1, "monto_min_mxn": 1000, "esg": false, "extranjero": false},
+    {"id": "GOB-03", "nombre": "Bono verde soberano 7 años", "clase": "deuda_gubernamental", "riesgo": 2, "rend_esperado_anual": 0.085, "volatilidad_anual": 0.045, "liquidez_dias": 2, "monto_min_mxn": 1000, "esg": true, "extranjero": false},
+    {"id": "CORP-01", "nombre": "Fondo de deuda corporativa AAA", "clase": "deuda_corporativa", "riesgo": 2, "rend_esperado_anual": 0.100, "volatilidad_anual": 0.050, "liquidez_dias": 2, "monto_min_mxn": 2000, "esg": false, "extranjero": false},
+    {"id": "CORP-02", "nombre": "Bono sustentable corporativo AA", "clase": "deuda_corporativa", "riesgo": 2, "rend_esperado_anual": 0.104, "volatilidad_anual": 0.060, "liquidez_dias": 3, "monto_min_mxn": 2000, "esg": true, "extranjero": false},
+    {"id": "CORP-03", "nombre": "Fondo de deuda corporativa global", "clase": "deuda_corporativa", "riesgo": 3, "rend_esperado_anual": 0.070, "volatilidad_anual": 0.065, "liquidez_dias": 3, "monto_min_mxn": 2000, "esg": false, "extranjero": true},
+    {"id": "RV-01", "nombre": "Fondo de dividendos de baja volatilidad México", "clase": "renta_variable", "riesgo": 2, "rend_esperado_anual": 0.100, "volatilidad_anual": 0.120, "liquidez_dias": 2, "monto_min_mxn": 1000, "esg": false, "extranjero": false},
+    {"id": "RV-02", "nombre": "ETF ESG de baja volatilidad", "clase": "renta_variable", "riesgo": 2, "rend_esperado_anual": 0.095, "volatilidad_anual": 0.110, "liquidez_dias": 2, "monto_min_mxn": 1000, "esg": true, "extranjero": false},
+    {"id": "RV-03", "nombre": "ETF índice amplio México", "clase": "renta_variable", "riesgo": 3, "rend_esperado_anual": 0.110, "volatilidad_anual": 0.180, "liquidez_dias": 2, "monto_min_mxn": 1000, "esg": false, "extranjero": false},
+    {"id": "RV-04", "nombre": "ETF ESG global", "clase": "renta_variable", "riesgo": 3, "rend_esperado_anual": 0.105, "volatilidad_anual": 0.160, "liquidez_dias": 2, "monto_min_mxn": 1000, "esg": true, "extranjero": true},
+    {"id": "RV-05", "nombre": "ETF tecnología Estados Unidos", "clase": "renta_variable", "riesgo": 4, "rend_esperado_anual": 0.130, "volatilidad_anual": 0.250, "liquidez_dias": 2, "monto_min_mxn": 1000, "esg": false, "extranjero": true},
+    {"id": "RV-06", "nombre": "Fondo de acciones de pequeña capitalización México", "clase": "renta_variable", "riesgo": 4, "rend_esperado_anual": 0.120, "volatilidad_anual": 0.240, "liquidez_dias": 3, "monto_min_mxn": 5000, "esg": false, "extranjero": false},
+    {"id": "DER-01", "nombre": "Warrant sobre índice", "clase": "derivados", "riesgo": 5, "rend_esperado_anual": 0.0, "volatilidad_anual": 0.600, "liquidez_dias": 2, "monto_min_mxn": 10000, "esg": false, "extranjero": false},
+    {"id": "CRI-01", "nombre": "Fondo de criptoactivos", "clase": "cripto", "riesgo": 5, "rend_esperado_anual": 0.0, "volatilidad_anual": 0.800, "liquidez_dias": 1, "monto_min_mxn": 10000, "esg": false, "extranjero": true}
+  ]
+}

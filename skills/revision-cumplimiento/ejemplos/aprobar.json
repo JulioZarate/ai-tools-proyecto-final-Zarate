@@ -1,0 +1,41 @@
+{
+  "descripcion": "Redacción correcta: R1–R10 sin hallazgos.",
+  "esperado": [],
+  "requerimiento": {
+    "perfil_riesgo": "moderado",
+    "monto_mxn": 250000,
+    "horizonte_anios": 5,
+    "objetivo": "retiro",
+    "restricciones": [
+      "solo_esg"
+    ]
+  },
+  "seleccion_agente2": {
+    "liquidez": [
+      "LIQ-01",
+      "LIQ-02"
+    ],
+    "deuda_gubernamental": [
+      "GOB-03"
+    ],
+    "deuda_corporativa": [
+      "CORP-02"
+    ],
+    "renta_variable": [
+      "RV-02",
+      "RV-04"
+    ]
+  },
+  "redaccion": {
+    "resumen": "Resultado simulado. Propuesta informativa para perfil moderado con restricción ESG: GOB-03 con 40%, CORP-02 con 20%, RV-02 con 17.5%, RV-04 con 17.5%, LIQ-01 con 2.5%, LIQ-02 con 2.5%. Rendimiento esperado ilustrativo de 9.45% anual y volatilidad aproximada de 4.03%. Este documento no constituye una recomendación; requiere aprobación del asesor.",
+    "supuestos": [
+      "Rendimientos ilustrativos del catálogo ficticio.",
+      "Correlación cero entre instrumentos."
+    ],
+    "riesgos": [
+      "Riesgo de tasa de interés en deuda.",
+      "Riesgo de mercado y tipo de cambio en ETF ESG global."
+    ],
+    "advertencias": []
+  }
+}

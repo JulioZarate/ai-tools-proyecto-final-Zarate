@@ -1,0 +1,56 @@
+name: Validar y publicar
+
+# Se activa con cambios en la rama de entrega y manualmente. Publica en Pages SOLO si todos los controles pasan.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  validar:
+    name: Controles previos al despliegue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: 1 · Estructura, cálculos deterministas, reglas de skills, costos y matriz de pruebas
+        run: node --test tests/unit/*.test.mjs
+
+      - name: 2 · Workflows de n8n sincronizados con sus fuentes
+        run: node n8n/build_workflows.mjs --check
+
+      - name: 3 · Datos públicos del panel desde la exportación sanitizada (falla si hay campos personales)
+        run: node scripts/build_panel.mjs
+
+      - name: 4 · Empaquetar sitio y escanear secretos / archivos obligatorios
+        run: node scripts/construir_sitio.mjs
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  desplegar:
+    name: Publicar en GitHub Pages
+    needs: validar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4
