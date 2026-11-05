@@ -28,9 +28,9 @@
     "P04": {
       "fecha": "2026-11-05",
       "caso_id": "VAL-261105-YQZY; VAL-261105-AQJJ; VAL-261105-F66J",
-      "obtenido": "Aprobación de YQZY v2 → aprobado_simulado; rechazo de AQJJ → rechazado sin acción. Vencimiento: F66J (plazo 03:01 UTC) pendiente de pulsar Aprobar tras el plazo para registrar 'expirado'. Versión no vigente verificada en local.",
-      "estado": "parcial",
-      "evidencia": "Capturas de Telegram + export",
+      "obtenido": "Aprobación de YQZY v2 → aprobado_simulado; rechazo de AQJJ → rechazado sin acción; Aprobar en F66J después del plazo (03:01 UTC) → 'El plazo de aprobación del caso VAL-261105-F66J venció. Se marca como expirado y no se ejecuta la acción.' Versión no vigente verificada en local.",
+      "estado": "aprobado",
+      "evidencia": "Capturas de Telegram (5-nov 2:59 PM) + export",
       "entrada": "Botones Aprobar (YQZY), Rechazar (AQJJ) y Aprobar tras el plazo (F66J)"
     },
     "P06": {
@@ -80,6 +80,14 @@
       "estado": "aprobado",
       "evidencia": "https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate/actions/runs/42107210567 + costos/resumen.md",
       "entrada": "Actions → Actualizar datos desde n8n (export real) + node --test"
+    },
+    "P10": {
+      "fecha": "2026-11-05",
+      "caso_id": "VAL-261105-4DM3",
+      "entrada": "Segundo clic en Aprobar sobre un caso ya aprobado",
+      "obtenido": "'El caso VAL-261105-4DM3 ya no está pendiente (estado: aprobado_simulado). No se ejecutó nada.' Además, dedupe persistente por update_id verificado en local.",
+      "estado": "aprobado",
+      "evidencia": "Captura de Telegram (5-nov 2:58 PM) + evidencias/local/resultado_integracion_local.json"
     }
   },
   "hallazgos_corregidos": [
