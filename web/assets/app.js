@@ -130,11 +130,16 @@
     const agentId = document.body.dataset.agentId;
     $('btn-voz').disabled = true;
     if (!agentId || agentId.indexOf('REEMPLAZAR') >= 0) { vozFalla('El asistente no está configurado en esta publicación.'); return; }
-    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { vozFalla('Este navegador no permite usar el micrófono.'); return; }
-    try {
-      const s = await navigator.mediaDevices.getUserMedia({ audio: true });
-      s.getTracks().forEach((t) => t.stop());
-    } catch (e) { vozFalla('Permiso de micrófono denegado o no disponible.'); return; }
+    // Sin micrófono se informa la alternativa, pero el widget se carga igual: permite chat por texto.
+    let micOk = true;
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) micOk = false;
+    else {
+      try {
+        const s = await navigator.mediaDevices.getUserMedia({ audio: true });
+        s.getTracks().forEach((t) => t.stop());
+      } catch (e) { micOk = false; }
+    }
+    if (!micOk) vozFalla('Permiso de micrófono denegado o no disponible. Puedes escribirle a Andrea en el widget (modo texto).');
     const cont = $('voz-contenedor');
     cont.hidden = false;
     const w = document.createElement('elevenlabs-convai');
