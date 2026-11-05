@@ -86,7 +86,10 @@ function calcularPropuesta(req, catalogo, reglas, seleccion) {
   const dest = reglas.clase_destino_sobrante;
   const idsDestElegibles = base.elegibles[dest].map(function (i) { return i.id; });
   let idsDest = (seleccion[dest] || []).filter(function (id) { return idsDestElegibles.indexOf(id) >= 0; }).slice(0, reglas.instrumentos_por_clase_max);
-  if (idsDest.length === 0) idsDest = idsDestElegibles.slice(0, reglas.instrumentos_por_clase_max);
+  if (idsDest.length === 0 && idsDestElegibles.length) {
+    idsDest = idsDestElegibles.slice(0, reglas.instrumentos_por_clase_max);
+    supuestos.push('La selección no incluyó ' + dest + ': el código asignó ' + idsDest.join(', ') + ' del catálogo autorizado.');
+  }
   const pesoDest = (base.mezcla[dest] || 0) + sobrante;
   if (pesoDest > 0) {
     if (idsDest.length === 0) errores.push('No hay instrumentos de ' + dest + ' para asignar ' + redondear(pesoDest * 100, 2) + '%.');

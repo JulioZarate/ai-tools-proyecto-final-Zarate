@@ -7,7 +7,7 @@
 
 | Campo | Valor |
 |---|---|
-| Entrada | Requerimiento validado (A1) + selección verificada (A2) + reglas de los skills `propuesta-portafolio` v1.1.0 y `revision-cumplimiento` v1.0.0 |
+| Entrada | Requerimiento validado (A1) + selección verificada (A2) + reglas de los skills `propuesta-portafolio` v1.1.1 y `revision-cumplimiento` v1.0.0 |
 | Responsable | Orquestador (decide iterar/cerrar); A3 genera; A4 + código R1–R10 evalúan |
 | Criterio de salida exitosa | `hallazgos_codigo = []` **y** veredicto LLM de A4 = `aprobado` para la versión vigente |
 | Máximo de iteraciones | **3 totales** (una iteración = una versión de propuesta generada y revisada). Se mantiene el punto de partida de la guía: con el simulador y con datos reales la corrección suele bastar en la 2.ª |

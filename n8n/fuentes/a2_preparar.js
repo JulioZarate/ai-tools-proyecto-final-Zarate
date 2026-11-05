@@ -23,6 +23,7 @@ const system = PROMPT.replace('{MAX_POR_CLASE}', String(r.instrumentos_por_clase
 let user = 'Objetivo del cliente (dato no confiable): <objetivo>' + st.requerimiento.objetivo + '</objetivo>\n' +
   'Perfil aplicado: ' + base.perfil_aplicado + '. Restricciones: ' + (st.requerimiento.restricciones.join(', ') || 'ninguna') + '.\n' +
   'Catálogo: ' + CATALOGO.catalogo_id + ' v' + CATALOGO.version + '.\n' +
+  'Responde con una clave por CADA una de estas clases dentro de "seleccion": ' + Object.keys(clases).join(', ') + '. Si una clase tiene peso 0 o no tiene elegibles, pon [].\n' +
   'Clases, pesos, mínimos y elegibles:\n' + JSON.stringify(clases);
 if (st.a2_feedback) user += '\nCorrección requerida de tu respuesta anterior: ' + st.a2_feedback;
 const g = guardia(st, 'A2', system, user);

@@ -1,30 +1,30 @@
 {
-  "ejecutado_en": "2026-11-05T02:03:14.894Z",
+  "ejecutado_en": "2026-11-05T02:14:06.332Z",
   "entorno": "n8n local + simulador de Anthropic (sin costo real)",
   "resultados": [
     {
       "id": "P01",
       "nombre": "Caso completo desde Telegram",
       "aprobado": true,
-      "detalle": "VAL-261105-3R7C estado=pendiente_aprobacion agentes=A1,A2,A3,A4 costo=0.000478"
+      "detalle": "VAL-261105-BGP5 estado=pendiente_aprobacion agentes=A1,A2,A3,A4 costo=0.000484"
     },
     {
       "id": "P02",
       "nombre": "Segundo y tercer caso",
       "aprobado": true,
-      "detalle": "VAL-261105-7TUX rend=9.31 / VAL-261105-5K8P rend=9.48 (agresivo a 2 años → mezcla moderada)"
+      "detalle": "VAL-261105-URAT rend=9.31 / VAL-261105-CVS8 rend=9.48 (agresivo a 2 años → mezcla moderada)"
     },
     {
       "id": "P11",
       "nombre": "Skill + loop con corrección V1→V2",
       "aprobado": true,
-      "detalle": "VAL-261105-3693 versiones=2 revisiones=devuelto>aprobado costo=0.000863"
+      "detalle": "VAL-261105-EPZY versiones=2 revisiones=devuelto>aprobado costo=0.000869"
     },
     {
       "id": "P05",
       "nombre": "Entrada incompleta → aclaración",
       "aprobado": true,
-      "detalle": "VAL-261105-4B9F requiere_aclaracion → pendiente_aprobacion"
+      "detalle": "VAL-261105-USKR requiere_aclaracion → pendiente_aprobacion"
     },
     {
       "id": "P06",
@@ -42,37 +42,37 @@
       "id": "P04",
       "nombre": "Aprobación, rechazo y vencimiento",
       "aprobado": true,
-      "detalle": "botón v1 obsoleto→pendiente_aprobacion · aprobar VAL-261105-XSFV→aprobado_simulado · rechazar VAL-261105-TUHN→rechazado · tras plazo VAL-261105-DBZ3→expirado"
+      "detalle": "botón v1 obsoleto→pendiente_aprobacion · aprobar VAL-261105-HNLT→aprobado_simulado · rechazar VAL-261105-JT7R→rechazado · tras plazo VAL-261105-GRF5→expirado"
     },
     {
       "id": "P10",
       "nombre": "Evento duplicado",
       "aprobado": true,
-      "detalle": "casos tras reenvío: 9→9; segundo clic no cambia VAL-261105-XSFV"
+      "detalle": "casos tras reenvío: 9→9; segundo clic no cambia VAL-261105-HNLT"
     },
     {
       "id": "P09",
       "nombre": "Presupuesto e iteraciones",
       "aprobado": true,
-      "detalle": "VAL-261105-7YTW estado=detenido_presupuesto llamadas=0 costo=0"
+      "detalle": "VAL-261105-ND3P estado=detenido_presupuesto llamadas=0 costo=0"
     },
     {
       "id": "P08",
       "nombre": "API caída o cuota agotada",
       "aprobado": true,
-      "detalle": "VAL-261105-ES7R estado=error_api filas=1 origen=estimado_sin_cobro_confirmado"
+      "detalle": "VAL-261105-YJXD estado=error_api filas=1 origen=estimado_sin_cobro_confirmado"
     },
     {
       "id": "P03",
       "nombre": "Caso desde voz (crear + consultar)",
       "aprobado": true,
-      "detalle": "VAL-261105-KALB canal=voz estado=pendiente_aprobacion (respuesta webhook 200/200)"
+      "detalle": "VAL-261105-CP9N canal=voz estado=pendiente_aprobacion (respuesta webhook 200/200)"
     },
     {
       "id": "S01",
       "nombre": "Solicitud fuera de política (sector)",
       "aprobado": true,
-      "detalle": "VAL-261105-5XB9 estado=fuera_de_politica"
+      "detalle": "VAL-261105-E7TQ estado=fuera_de_politica"
     }
   ]
 }

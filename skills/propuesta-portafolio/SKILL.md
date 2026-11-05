@@ -1,13 +1,13 @@
 ---
 name: propuesta-portafolio
 description: Prepara una propuesta INFORMATIVA de portafolio para Valoria Casa de Bolsa (ficticia) usando solo el catálogo autorizado y reglas deterministas de mezcla por perfil. Úsalo cuando un caso ya tiene requerimiento estructurado (perfil, monto, horizonte, restricciones).
-version: 1.1.0
+version: 1.1.1
 tipo: negocio
 agentes: [agente2_datos, agente3_propuesta]
 activador: El orquestador lo carga cuando el Agente 1 entrega un requerimiento con estado "completo".
 ---
 
-# Skill de negocio · propuesta-portafolio v1.1.0
+# Skill de negocio · propuesta-portafolio v1.1.1
 
 ## Propósito (objetivo)
 Convertir un requerimiento validado en una propuesta informativa de asignación de activos que un asesor humano pueda aprobar o rechazar. Resuelve: "¿qué mezcla de instrumentos del catálogo autorizado corresponde a este perfil, monto y horizonte, y con qué supuestos?".
@@ -51,7 +51,7 @@ Convertir un requerimiento validado en una propuesta informativa de asignación 
 ## Reglas verificables
 ```json reglas
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "monto_min_mxn": 50000,
   "monto_max_mxn": 5000000,
   "horizonte_min_anios": 1,
@@ -102,6 +102,7 @@ El orquestador lo combina con el cálculo en `propuesta = {version, lineas, metr
 |---|---|
 | Campo faltante o fuera de rango | No se ejecuta; vuelve al Agente 1 → `requiere_aclaracion` |
 | Clase sin instrumentos elegibles | Peso a liquidez + supuesto explícito |
+| A2 no elige liquidez | El código asigna los fondos de liquidez elegibles + supuesto explícito (no se devuelve a A2) |
 | Liquidez rebasaría 40% por instrumento | `errores` → caso `escalado_humano` |
 | Monto por instrumento < mínimo | `errores` → `escalado_humano` |
 | Solicitud de derivados/cripto/garantías | `fuera_de_politica` (Agente 1 o guardrail) |
@@ -128,6 +129,7 @@ El workflow principal descarga este archivo desde GitHub Pages (`/skills/propues
 ## Historial de versiones
 - 1.0.0: primera versión; sin tope de concentración (V1 fallaba con agresivo + 1 instrumento de renta variable = 65%).
 - 1.1.0: tope de 40% por instrumento, sobrante a liquidez, regla de horizonte corto, frases obligatorias explícitas.
+- 1.1.1: (hallazgo en n8n Cloud, caso VAL-261105-MPWJ) A2 omitía la clase liquidez y el caso terminaba en error; ahora el código la completa y lo declara como supuesto.
 
 ## Autoevaluación (0–4)
 | Claridad | Contexto/secuencia | Evidencia | Control/retorno | Utilidad | Total |

@@ -24,7 +24,8 @@ else {
     if (malos.length) problemas.push(clase + ': IDs no elegibles ' + malos.join(','));
     const buenos = ids.filter(function (id, k) { return validos.indexOf(id) >= 0 && ids.indexOf(id) === k; });
     if (buenos.length > r.instrumentos_por_clase_max) problemas.push(clase + ': más de ' + r.instrumentos_por_clase_max + ' instrumentos');
-    if (info.peso_pct > 0 && buenos.length < info.minimo) problemas.push(clase + ': se requieren al menos ' + info.minimo + ' instrumentos');
+    // La clase destino del sobrante (liquidez) la completa el código si el agente no la elige.
+    if (clase !== r.clase_destino_sobrante && info.peso_pct > 0 && buenos.length < info.minimo) problemas.push(clase + ': se requieren al menos ' + info.minimo + ' instrumentos');
     seleccion[clase] = buenos.slice(0, r.instrumentos_por_clase_max);
   }
 }
