@@ -66,7 +66,7 @@ Convertir un requerimiento validado en una propuesta informativa de asignación 
   "clases_prohibidas": ["derivados", "cripto"],
   "riesgo_prohibido_min": 5,
   "clases_exentas_esg": ["liquidez"],
-  "concentracion_max_instrumento": 0.40,
+  "concentracion_max_instrumento": 0.70,
   "instrumentos_por_clase_max": 2,
   "clase_destino_sobrante": "liquidez",
   "suma_pesos_tolerancia": 0.0001
