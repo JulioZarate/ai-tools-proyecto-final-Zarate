@@ -1,0 +1,61 @@
+name: Actualizar datos desde n8n
+
+# Botón manual (Actions → "Actualizar datos desde n8n" → Run workflow).
+# Descarga la exportación sanitizada del webhook de n8n, regenera panel y costos, hace commit
+# y vuelve a validar y publicar. Requiere los secretos del repositorio:
+#   VALORIA_EXPORT_URL  (URL de producción del webhook valoria-export)
+#   VALORIA_KEY         (valor del encabezado x-valoria-key)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
+
+jobs:
+  exportar:
+    name: Descargar exportación sanitizada y regenerar datos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Descargar exportación de n8n (los secretos no se escriben en archivos públicos)
+        env:
+          VALORIA_EXPORT_URL: ${{ secrets.VALORIA_EXPORT_URL }}
+          VALORIA_KEY: ${{ secrets.VALORIA_KEY }}
+        run: |
+          test -n "$VALORIA_EXPORT_URL" || { echo "Falta el secreto VALORIA_EXPORT_URL"; exit 1; }
+          test -n "$VALORIA_KEY" || { echo "Falta el secreto VALORIA_KEY"; exit 1; }
+          mkdir -p datos/export
+          curl -sSf -H "x-valoria-key: ${VALORIA_KEY}" "${VALORIA_EXPORT_URL}" -o /tmp/export.json
+          node -e 'const fs=require("fs");const j=JSON.parse(fs.readFileSync("/tmp/export.json","utf8"));const x=Array.isArray(j)?j[0]:j;if(x.esquema!=="valoria-export/1")throw new Error("esquema inesperado");fs.writeFileSync("datos/export/export_sanitizado.json",JSON.stringify(x,null,2)+"\n");console.log("casos:",x.casos.length,"llamadas:",x.costos.length)'
+
+      - name: Regenerar panel y costos (falla si hay campos personales)
+        run: |
+          node scripts/build_panel.mjs
+          node scripts/costos.mjs
+
+      - name: Pruebas antes de guardar
+        run: node --test tests/unit/*.test.mjs
+
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/export web/data costos
+          git diff --cached --quiet && echo "Sin cambios" || git commit -m "Datos sanitizados desde n8n ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push
+
+  publicar:
+    name: Validar y publicar
+    needs: exportar
+    uses: ./.github/workflows/validar-y-publicar.yml
