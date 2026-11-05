@@ -1,7 +1,7 @@
 # Resumen de costos por etapa y por caso
 
 > Fuente de llamadas LLM: `datos/export/export_sanitizado.json` (medido por la API de Anthropic en n8n Cloud).
-> Fórmula por llamada: Cᵢ = (T_entrada × P_entrada + T_salida × P_salida) / 1 000 000, con P = 0.1 / 0.5 USD por millón (Claude Haiku 5.5). Generado: 2026-11-05T20:51 UTC.
+> Fórmula por llamada: Cᵢ = (T_entrada × P_entrada + T_salida × P_salida) / 1 000 000, con P = 0.1 / 0.5 USD por millón (Claude Haiku 5.5). Generado: 2026-11-05T21:00 UTC.
 
 ## Por etapa
 
@@ -24,7 +24,7 @@
 | VAL-261105-MPWJ | telegram | error_validacion | 3 | 0.002854 | 0.0498 |
 | VAL-261105-YQZY | telegram | aprobado_simulado | 6 | 0.005321 | 0.0928 |
 | VAL-261105-AQJJ | telegram | rechazado | 4 | 0.002582 | 0.0450 |
-| VAL-261105-F66J | telegram | pendiente_aprobacion | 4 | 0.003602 | 0.0628 |
+| VAL-261105-F66J | telegram | expirado | 4 | 0.003602 | 0.0628 |
 | VAL-261105-4DM3 | voz | aprobado_simulado | 4 | 0.002853 | 0.0498 |
 
 ## Indicadores

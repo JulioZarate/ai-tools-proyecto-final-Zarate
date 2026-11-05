@@ -1,6 +1,6 @@
 {
   "esquema": "valoria-export/1",
-  "generado_en": "2026-11-05T20:51:21.838Z",
+  "generado_en": "2026-11-05T21:00:49.020Z",
   "datos_ficticios": true,
   "fuente": "n8n Data Tables valoria_casos, valoria_costos, valoria_traza (exportación sanitizada)",
   "casos": [
@@ -91,7 +91,7 @@
     {
       "caso_id": "VAL-261105-F66J",
       "canal": "telegram",
-      "estado": "pendiente_aprobacion",
+      "estado": "expirado",
       "version_propuesta": 1,
       "perfil_riesgo": "agresivo",
       "monto_rango": ">=1M",
@@ -102,11 +102,11 @@
       "costo_usd": 0.003602,
       "rend_esperado_pct": 9.45,
       "aprobado_primera_revision": true,
-      "decision": "",
+      "decision": "expirado",
       "creado_en": "2026-11-05T02:31:17.191Z",
-      "actualizado_en": "2026-11-05T02:31:44.443Z",
-      "decidido_en": "",
-      "ciclo_decision_min": null,
+      "actualizado_en": "2026-11-05T20:59:45.608Z",
+      "decidido_en": "2026-11-05T20:59:45.608Z",
+      "ciclo_decision_min": 1108.5,
       "demo": ""
     },
     {
@@ -1221,6 +1221,30 @@
       "version_propuesta": 1,
       "iteracion": 0,
       "timestamp": "2026-11-05T19:51:20.061Z"
+    },
+    {
+      "caso_id": "VAL-261105-4DM3",
+      "agente": "HUMANO",
+      "accion": "decision_ap",
+      "estado": "no_pendiente",
+      "skill": "",
+      "version_skill": "",
+      "llamada_id": "",
+      "version_propuesta": 1,
+      "iteracion": 0,
+      "timestamp": "2026-11-05T20:58:45.809Z"
+    },
+    {
+      "caso_id": "VAL-261105-F66J",
+      "agente": "HUMANO",
+      "accion": "decision_ap",
+      "estado": "expirado",
+      "skill": "",
+      "version_skill": "",
+      "llamada_id": "",
+      "version_propuesta": 1,
+      "iteracion": 0,
+      "timestamp": "2026-11-05T20:59:45.608Z"
     }
   ]
 }
