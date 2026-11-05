@@ -10,6 +10,7 @@ const r = st.skills.negocio.reglas;
 st.iteracion += 1;
 st.version_propuesta += 1;
 const calc = calcularPropuesta(st.requerimiento, CATALOGO, r, st.seleccion);
+if (st.ajustes_a2 && st.ajustes_a2.length) calc.supuestos = st.ajustes_a2.map(function (a) { return 'Ajuste de la selección: ' + a + '.'; }).concat(calc.supuestos);
 st.calculo = calc;
 if (!calc.valido) {
   st.estado = 'escalado_humano';

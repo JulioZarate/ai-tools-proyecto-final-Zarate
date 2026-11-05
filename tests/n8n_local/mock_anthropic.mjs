@@ -34,21 +34,26 @@ function a2(user) {
   const clases = JSON.parse(json.split('\nCorrección')[0]);
   const seleccion = {}, justificaciones = {}, insuficiencias = [];
   for (const [c, info] of Object.entries(clases)) {
-    const n = Math.max(info.minimo, Math.min(2, info.elegibles.length));
-    seleccion[c] = info.elegibles.slice(0, n).map((e) => e.id);
+    if (c === 'liquidez') { if (!info.elegibles.length) insuficiencias.push(c); continue; }
+    // Comportamientos reales observados: omite liquidez, elige solo 1 y a veces inventa un ID.
+    seleccion[c] = info.elegibles.slice(0, 1).map((e) => e.id);
+    if (c === 'renta_variable') seleccion[c].push('RV-99');
     seleccion[c].forEach((id) => { justificaciones[id] = 'Elegible para el perfil; riesgo y liquidez adecuados.'; });
     if (!info.elegibles.length) insuficiencias.push(c);
   }
+  for (const c of Object.keys(seleccion)) if (!seleccion[c]) delete seleccion[c];
   return { seleccion, justificaciones, insuficiencias, fuentes: ['VALORIA-CAT v1.0.0'] };
 }
 function a3(user) {
   const m = user.match(/Cálculo \(no lo cambies\): (\{.*\})\n/);
   const calc = JSON.parse(m[1]);
-  const partes = calc.lineas.map((l) => l.id + ' con ' + l.peso_pct + '%').join(', ');
+  const partes = calc.lineas.map((l) => l.peso_pct + '% en ' + l.id).join(', ');
+  const tot = {}; calc.lineas.forEach((l) => { tot[l.clase] = (tot[l.clase] || 0) + l.peso_pct; });
+  const deuda = Math.round(((tot.deuda_gubernamental || 0) + (tot.deuda_corporativa || 0)) * 100) / 100;
   return {
-    resumen: 'Resultado simulado. Propuesta informativa para perfil ' + calc.perfil_aplicado + ': ' + partes +
-      '. Rendimiento esperado ilustrativo de ' + calc.metricas.rend_esperado_anual_pct + '% anual con volatilidad aproximada de ' + calc.metricas.volatilidad_aprox_pct +
-      '%. Este documento no constituye una recomendación y requiere aprobación del asesor.',
+    resumen: 'Resultado simulado. Para el perfil ' + calc.perfil_aplicado + ' se propone ' + partes +
+      '. La deuda suma ' + deuda + '% del portafolio. El rendimiento esperado ilustrativo es de ' + calc.metricas.rend_esperado_anual_pct + '% anual con volatilidad aproximada de ' + calc.metricas.volatilidad_aprox_pct +
+      '%. Los rendimientos no están garantizados y este documento no constituye una recomendación.',
     supuestos: ['Rendimientos del catálogo ficticio.', 'Correlación cero entre instrumentos.'],
     riesgos: ['Riesgo de tasa de interés.', 'Riesgo de mercado en renta variable.'],
     advertencias: []
@@ -70,7 +75,7 @@ http.createServer((req, res) => {
     let b; try { b = JSON.parse(body); } catch { res.writeHead(400); res.end('{}'); return; }
     const user = b.messages[0].content;
     const salida = { A1: a1, A2: a2, A3: a3, A4: a4 }[agente](user);
-    const texto = JSON.stringify(salida);
+    const texto = agente === 'A1' ? 'Aquí está la extracción:\n```json\n' + JSON.stringify(salida, null, 2) + '\n```' : JSON.stringify(salida);
     res.writeHead(200, { 'content-type': 'application/json' });
     res.end(JSON.stringify({ id: 'msg_mock', type: 'message', role: 'assistant', model: b.model, stop_reason: 'end_turn',
       content: [{ type: 'text', text: texto }], usage: { input_tokens: tokens(b.system) + tokens(user), output_tokens: tokens(texto) } }));

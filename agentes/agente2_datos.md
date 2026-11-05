@@ -18,8 +18,11 @@ Reglas:
 Responde SOLO con JSON: {"seleccion":{"clase":["ID",...]},"justificaciones":{"ID":"texto"},"insuficiencias":["clase"],"fuentes":["VALORIA-CAT vX"]}
 
 ## Validación de código (nodo "A2 validar")
-- Cada ID ∈ elegibles de su clase; sin duplicados; ≤ máximo por clase.
-- Si una clase tiene suficientes elegibles pero el agente eligió menos del mínimo de concentración → devuelto (1 corrección como máximo, después `error_validacion`).
+- JSON ilegible → se pide de nuevo una vez; si vuelve a fallar, `error_validacion`.
+- IDs que no son elegibles → se descartan (el LLM no puede introducir instrumentos).
+- Menos instrumentos que el mínimo de concentración → el código completa con elegibles del catálogo.
+- Liquidez omitida → el cálculo asigna los fondos de liquidez elegibles.
+- Todo ajuste queda en la traza (`ok_con_ajustes`) y como supuesto visible para el asesor.
 
 ## Salida verificable
 ```json

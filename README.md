@@ -78,7 +78,7 @@ En Telegram (como asesor):
 ```
 /nuevo perfil moderado, 250 mil pesos a 5 años, objetivo: retiro, solo ESG
 ```
-Esperado en < 30 s: acuse con folio `VAL-AAMMDD-XXXX` → mensaje "🟡 Aprobación requerida" con 6 líneas (GOB-03, CORP-02, RV-02, RV-04, LIQ-01, LIQ-02 o similares según A2), suma 100%, botones **Aprobar / Rechazar**. Al aprobar: "✅ … APROBADO … Resultado simulado". `/estado FOLIO` → "aprobado (envío simulado)". En *Data tables*: 1 fila en casos, ≥ 4 filas en costos (A1–A4) y ~10 en traza con el mismo `caso_id`.
+Esperado en < 90 s: acuse con folio `VAL-AAMMDD-XXXX` → mensaje "🟡 Aprobación requerida" con 6 líneas (GOB-03, CORP-02, RV-02, RV-04, LIQ-01, LIQ-02 o similares según A2), suma 100%, botones **Aprobar / Rechazar**. Al aprobar: "✅ … APROBADO … Resultado simulado". `/estado FOLIO` → "aprobado (envío simulado)". En *Data tables*: 1 fila en casos, ≥ 4 filas en costos (A1–A4) y ~10 en traza con el mismo `caso_id`.
 
 Otros comandos: `/ayuda`, `/estado FOLIO`, `/aclarar FOLIO <dato>`. Parámetros de prueba dentro de `/nuevo`: `demo=falla_v1` (fuerza el loop V1→V2, declarado en la traza) y `presupuesto=0.0002` (fuerza el corte por presupuesto).
 

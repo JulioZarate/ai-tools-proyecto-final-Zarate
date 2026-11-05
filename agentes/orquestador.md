@@ -7,9 +7,9 @@
 1. Rechazar antes de cualquier LLM: usuario no autorizado, campos con longitud inválida, patrones de inyección o URLs, modo distinto de `SIMULADO`.
 2. Cargar los skills desde Pages; si fallan, `error_skill`.
 3. Plan fijo: A1 → A2 → A3 ⇄ A4 → cierre.
-4. Antes de cada llamada: comprobar permisos del agente, presupuesto restante (con reserva de 20%), número de llamadas (≤ 10), iteraciones (≤ 3) y tiempo (≤ 120 s). Si no alcanza: `detenido_presupuesto` o `detenido_limite`.
+4. Antes de cada llamada: comprobar permisos del agente, presupuesto restante (con reserva de 20%), número de llamadas (≤ 10), iteraciones (≤ 3) y tiempo (≤ 240 s). Si no alcanza: `detenido_presupuesto` o `detenido_limite`.
 5. Después de cada llamada: registrar consumo (tokens reportados por la API, costo con tarifa vigente), validar el contrato de salida del agente y anotar la traza.
-6. Salida inválida: A1 → detener (`error_validacion`); A2 → 1 corrección; A3/A4 → loop de calidad.
+6. Salida inválida: A1 → detener (`error_validacion`); A2 → 1 reintento solo si el JSON es ilegible; IDs inválidos o faltantes los corrige el código y los declara como supuesto; A3/A4 → loop de calidad.
 7. Nunca marcar `pendiente_aprobacion` si A4 no aprobó la versión vigente.
 8. Cerrar: actualizar `valoria_casos`, insertar filas de `valoria_costos` y `valoria_traza`, notificar.
 

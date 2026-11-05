@@ -1,13 +1,13 @@
 ---
 name: revision-cumplimiento
 description: Revisa una propuesta informativa de Valoria (ficticia) antes de pedir aprobación humana; combina verificaciones deterministas de cifras, políticas y lenguaje con una revisión LLM. Úsalo siempre que exista una propuesta versionada lista para liberar.
-version: 1.0.0
+version: 1.0.1
 tipo: calidad_seguridad
 agentes: [agente4_revisor]
 activador: El orquestador lo carga cuando el Agente 3 entrega una propuesta con `valido=true` en el cálculo.
 ---
 
-# Skill de calidad y seguridad · revision-cumplimiento v1.0.0
+# Skill de calidad y seguridad · revision-cumplimiento v1.0.1
 
 ## Propósito (objetivo)
 Impedir que una propuesta incorrecta, engañosa o fuera de política llegue al asesor como si estuviera lista. Resuelve: "¿esta versión puede liberarse a aprobación humana o debe devolverse con correcciones concretas?".
@@ -40,7 +40,7 @@ El propio caso (requerimiento, cálculo, redacción) y los bloques de reglas de 
 ## Reglas verificables
 ```json reglas
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "frases_obligatorias": ["Resultado simulado", "no constituye una recomendación"],
   "palabras_prohibidas": ["garantiza", "garantizado", "garantizada", "sin riesgo", "libre de riesgo", "rendimiento asegurado", "ganancia segura"],
   "patrones_inyeccion_salida": ["ignora las instrucciones", "system prompt", "api key", "x-api-key", "token"],
@@ -61,9 +61,9 @@ El propio caso (requerimiento, cálculo, redacción) y los bloques de reglas de 
 | R2 | Ninguna línea > 40% | `calculo.lineas[].peso_pct` |
 | R3 | Ningún riesgo > tope del perfil aplicado | `calculo.lineas[].riesgo` |
 | R4 | Frases obligatorias presentes | `redaccion.resumen` |
-| R5 | Sin palabras prohibidas | `redaccion.resumen`, `supuestos`, `riesgos` |
-| R6 | Cada ID del cálculo aparece en el resumen con su % (±0.1) | `resumen` vs `lineas` |
-| R7 | Todo porcentaje del resumen existe en el cálculo (±0.1) | `resumen` |
+| R5 | Sin afirmar palabras prohibidas (se permite la forma negada: "no está garantizado") | `redaccion.resumen`, `supuestos`, `riesgos` |
+| R6 | Cada ID del cálculo aparece en el resumen con su % (±0.1) a ≤ 25 caracteres, antes o después | `resumen` vs `lineas` |
+| R7 | Todo porcentaje del resumen existe en el cálculo (±0.1): pesos, métricas, mezcla, totales por clase, deuda total o renta fija total | `resumen` |
 | R8 | ≤ 180 palabras | `resumen` |
 | R9 | ≥ 2 supuestos y ≥ 2 riesgos | listas |
 | R10 | Sin patrones de inyección/secretos en la salida | todo el texto |
@@ -96,6 +96,7 @@ Igual que `propuesta-portafolio`: descarga desde Pages, el adaptador extrae regl
 
 ## Historial de versiones
 - 1.0.0: versión inicial con R1–R10.
+- 1.0.1: (revisión previa a pruebas reales) R5 acepta la forma negada; R6 busca el % antes o después del ID; R7 acepta totales por clase. Con 1.0.0 un resumen correcto como "40% en GOB-03… los rendimientos no están garantizados" se devolvía por error.
 
 ## Autoevaluación (0–4)
 | Claridad | Contexto/secuencia | Evidencia | Control/retorno | Utilidad | Total |

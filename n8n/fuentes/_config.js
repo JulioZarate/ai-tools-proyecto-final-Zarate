@@ -22,7 +22,7 @@ const CONFIG = {
   max_llamadas_caso: 10,
   max_iteraciones_calidad: 3,
   max_correcciones_a2: 1,
-  tiempo_max_caso_ms: 120000,
+  tiempo_max_caso_ms: 240000,
   // Haiku 5.5 cuenta el razonamiento interno dentro de max_tokens: margen amplio para que siempre quede texto.
   max_tokens: { A1: 2000, A2: 3000, A3: 3000, A4: 2000 },
   aprobacion_minutos: 30,

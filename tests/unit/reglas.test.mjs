@@ -131,3 +131,21 @@ test('KPIs: fórmulas sobre un conjunto conocido', () => {
   assert.equal(k.costo_por_caso_completado.valor, 0.003);
   assert.equal(k.costo_por_caso_completado.n_fallidos, 1);
 });
+
+test('revisión con redacción realista: aprueba textos correctos y rechaza promesas o cifras falsas', () => {
+  const req = { perfil_riesgo: 'moderado', monto_mxn: 250000, horizonte_anios: 5, objetivo: 'retiro', restricciones: ['solo_esg'] };
+  const calc = C.calcularPropuesta(req, CAT, RN, { deuda_gubernamental: ['GOB-03'], deuda_corporativa: ['CORP-02'], renta_variable: ['RV-02', 'RV-04'] });
+  const extra = { supuestos: ['Rendimientos ilustrativos.', 'Correlación cero.'], riesgos: ['Tasa de interés.', 'Mercado.'] };
+  const buenos = [
+    // % antes del ID, totales por clase y negación de garantía (estilo típico de un modelo real)
+    'Resultado simulado. Para un perfil moderado con restricción ESG se propone 40% en GOB-03 (bono verde soberano), 20% en CORP-02, 17.5% en RV-02, 17.5% en RV-04 y 2.5% en LIQ-01 y 2.5% en LIQ-02. La deuda representa 60% del portafolio y la renta variable 35%. El rendimiento esperado ilustrativo es 9.45% anual con volatilidad aproximada de 4.03%. Los rendimientos no están garantizados. Este documento no constituye una recomendación.',
+    // ID primero con porcentajes pegados
+    'Resultado simulado. GOB-03: 40%; CORP-02: 20%; RV-02: 17.5%; RV-04: 17.5%; LIQ-01: 2.5%; LIQ-02: 2.5%. Rendimiento esperado ilustrativo 9.45%, volatilidad 4.03%. No se garantiza ningún rendimiento y no constituye una recomendación.'
+  ];
+  for (const t of buenos) assert.deepEqual(R.revisarPropuesta(calc, { resumen: t, ...extra }, RN, RR), [], t.slice(0, 60));
+  const promesa = 'Resultado simulado. GOB-03 40%, CORP-02 20%, RV-02 17.5%, RV-04 17.5%, LIQ-01 2.5%, LIQ-02 2.5%. Rendimiento garantizado de 9.45%. No constituye una recomendación.';
+  assert.ok(R.revisarPropuesta(calc, { resumen: promesa, ...extra }, RN, RR).some((x) => x.startsWith('R5')));
+  const cifraFalsa = buenos[0].replace('40% en GOB-03', '45% en GOB-03');
+  const h = R.revisarPropuesta(calc, { resumen: cifraFalsa, ...extra }, RN, RR);
+  assert.ok(h.some((x) => x.startsWith('R6 · resumen · GOB-03')) && h.some((x) => x.startsWith('R7')), h.join(' | '));
+});

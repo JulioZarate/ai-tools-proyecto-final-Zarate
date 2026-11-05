@@ -41,7 +41,7 @@ Todo es ficticio: catálogo `VALORIA-CAT v1.0.0` con 16 instrumentos (incluye do
 1. **Orquestador determinista.** El orden del proceso es fijo; un LLM "decidiendo el siguiente paso" agregaría costo e incertidumbre sin información nueva. El juicio está en los agentes.
 2. **El LLM extrae o explica; el código calcula y decide.** A1 extrae, `validarRequerimiento()` decide; A2 elige, el código verifica IDs; A3 explica cifras que calculó `calcularPropuesta()`; A4 opina, pero R1–R10 vencen.
 3. **Fuente única de código.** El cálculo y la revisión viven en `agentes/*.js`; un generador los copia a los nodos Code y una prueba verifica que la copia sea idéntica. Así lo que se prueba en Actions es lo que corre en n8n.
-4. **HTTP directo a la API de Anthropic** para obtener `usage` exacto por llamada y controlar reintentos (3) y timeout (30 s).
+4. **HTTP directo a la API de Anthropic** para obtener `usage` exacto por llamada y controlar reintentos (3) y timeout (60 s).
 5. **Skills cargados en ejecución** desde Pages con huella en la traza: si el archivo cambia, la traza lo muestra; si no se puede descargar, el caso se detiene (`error_skill`) en lugar de usar una copia vieja en silencio.
 6. **Aprobación ligada a versión y plazo** (30 min, vencimiento perezoso al pulsar o consultar).
 
@@ -55,7 +55,7 @@ Todo es ficticio: catálogo `VALORIA-CAT v1.0.0` con 16 instrumentos (incluye do
 | Fuentes y veracidad | Solo catálogo autorizado; IDs verificados; cifras del texto contrastadas con el cálculo (R6/R7) | P11 |
 | Herramientas | Sin URLs del usuario (bloqueadas), sin ejecución de código propuesto; solo dos endpoints de voz con clave | P06 |
 | Aprobación humana | Botón = caso + versión + asesor + plazo; rechazo y vencimiento no ejecutan | P04 |
-| Presupuesto y límites | Guardia antes de cada llamada (reserva 20%), ≤10 llamadas, ≤3 iteraciones, ≤120 s | P09 |
+| Presupuesto y límites | Guardia antes de cada llamada (reserva 20%), ≤10 llamadas, ≤3 iteraciones, ≤240 s | P09 |
 | Fallas y duplicados | Reintentos acotados, `error_api` honesto, dedupe persistente | P08, P10 |
 | Trazabilidad | `caso_id`, versión, `llamada_id`, skill y huella en cada paso | P14 |
 

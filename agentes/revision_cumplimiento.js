@@ -5,6 +5,14 @@ function normalizarTexto(t) {
   return String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 }
 
+function porcentajesConPosicion(texto) {
+  const out = [];
+  const re = /(\d+(?:[.,]\d+)?)\s*%/g;
+  let m;
+  while ((m = re.exec(String(texto || ''))) !== null) out.push({ valor: Number(m[1].replace(',', '.')), ini: m.index, fin: m.index + m[0].length });
+  return out;
+}
+
 function porcentajesEnTexto(texto) {
   const out = [];
   const re = /(\d+(?:[.,]\d+)?)\s*%/g;
@@ -45,16 +53,32 @@ function revisarPropuesta(calculo, redaccion, reglasNeg, reglasRev) {
     if (nRes.indexOf(normalizarTexto(f)) < 0) h.push('R4 · resumen · falta "' + f + '"');
   });
   // R5 palabras prohibidas
+  // Se permite la forma negada ("no está garantizado", "no se garantiza"): solo se marca la afirmación.
   reglasRev.palabras_prohibidas.forEach(function (p) {
-    if (nTodo.indexOf(normalizarTexto(p)) >= 0) h.push('R5 · resumen/supuestos/riesgos · contiene "' + p + '"');
+    const t = normalizarTexto(p);
+    let i = nTodo.indexOf(t);
+    while (i >= 0) {
+      const antes = nTodo.slice(Math.max(0, i - 30), i);
+      if (!/\b(no|ni|nunca|sin)\b[^.;:!?]*$/.test(antes)) { h.push('R5 · resumen/supuestos/riesgos · afirma "' + p + '"'); break; }
+      i = nTodo.indexOf(t, i + t.length);
+    }
   });
   // R6 cada ID con su porcentaje
+  // Se acepta si el peso correcto aparece a ≤ 25 caracteres del ID (antes o después).
+  const pctPos = porcentajesConPosicion(resumen);
   calculo.lineas.forEach(function (l) {
-    const i = resumen.indexOf(l.id);
-    if (i < 0) { h.push('R6 · resumen · no menciona ' + l.id); return; }
-    const ventana = resumen.slice(i, i + 90);
-    const pcts = porcentajesEnTexto(ventana);
-    if (!pcts.some(function (p) { return Math.abs(p - l.peso_pct) <= tol; })) h.push('R6 · resumen · ' + l.id + ' sin su peso ' + l.peso_pct + '%');
+    let j = resumen.indexOf(l.id);
+    if (j < 0) { h.push('R6 · resumen · no menciona ' + l.id); return; }
+    let ok = false;
+    while (j >= 0 && !ok) {
+      const fin = j + l.id.length;
+      ok = pctPos.some(function (q) {
+        const d = q.fin <= j ? j - q.fin : (q.ini >= fin ? q.ini - fin : 0);
+        return d <= 25 && Math.abs(q.valor - l.peso_pct) <= tol;
+      });
+      j = resumen.indexOf(l.id, j + 1);
+    }
+    if (!ok) h.push('R6 · resumen · ' + l.id + ' sin su peso ' + l.peso_pct + '%');
   });
   // R7 todo % del resumen existe en el cálculo
   const validos = calculo.lineas.map(function (l) { return l.peso_pct; }).concat([
@@ -63,6 +87,13 @@ function revisarPropuesta(calculo, redaccion, reglasNeg, reglasRev) {
   ]);
   const mezcla = reglasNeg.perfiles[calculo.perfil_aplicado].mezcla;
   Object.keys(mezcla).forEach(function (k) { validos.push(Math.round(mezcla[k] * 10000) / 100); });
+  // Totales reales por clase y agregados con sentido financiero (deuda total, renta fija total).
+  const porClase = {};
+  calculo.lineas.forEach(function (l) { porClase[l.clase] = (porClase[l.clase] || 0) + l.peso_pct; });
+  const t = function (k) { return porClase[k] || 0; };
+  Object.keys(porClase).forEach(function (k) { validos.push(Math.round(porClase[k] * 100) / 100); });
+  validos.push(Math.round((t('deuda_gubernamental') + t('deuda_corporativa')) * 100) / 100);
+  validos.push(Math.round((t('deuda_gubernamental') + t('deuda_corporativa') + t('liquidez')) * 100) / 100);
   porcentajesEnTexto(resumen).forEach(function (p) {
     if (!validos.some(function (v) { return Math.abs(v - p) <= tol; })) h.push('R7 · resumen · ' + p + '% no existe en el cálculo');
   });

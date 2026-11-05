@@ -119,7 +119,7 @@ function llm(name, pos) {
   return nodo(name, 'n8n-nodes-base.httpRequest', 4.2, pos, {
     method: 'POST', url: 'https://api.anthropic.com/v1/messages', authentication: 'genericCredentialType', genericAuthType: 'httpHeaderAuth',
     sendHeaders: true, headerParameters: { parameters: [{ name: 'anthropic-version', value: '2023-06-01' }, { name: 'content-type', value: 'application/json' }] },
-    sendBody: true, specifyBody: 'json', jsonBody: '={{ JSON.stringify($json.request_body) }}', options: { timeout: 30000 }
+    sendBody: true, specifyBody: 'json', jsonBody: '={{ JSON.stringify($json.request_body) }}', options: { timeout: 60000 }
   }, { credentials: credAnthropic, retryOnFail: true, maxTries: 3, waitBetweenTries: 3000, onError: 'continueRegularOutput' });
 }
 function descargarSkill(name, pos, ruta_) {

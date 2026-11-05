@@ -1,7 +1,7 @@
 # Loop 2 · Seguridad y costo (antes y después de cada llamada)
 
 **Secuencia de la guía:** Evaluar permisos y presupuesto → ejecutar paso autorizado → registrar consumo → revisar límite y resultado → continuar o detener.
-**Dónde se ejecuta:** función `guardia()` en cada nodo `Ax preparar` → If `¿Ax autorizado?` → `LLM Ax` (reintentos 3, timeout 30 s) → `registrarLlamada()` en `Ax validar` → `Ruta tras Ax`. Antes de todo esto, el nodo `Normalizar y validar entrada` aplica los guardrails de acceso, longitud, inyección y modo.
+**Dónde se ejecuta:** función `guardia()` en cada nodo `Ax preparar` → If `¿Ax autorizado?` → `LLM Ax` (reintentos 3, timeout 60 s) → `registrarLlamada()` en `Ax validar` → `Ruta tras Ax`. Antes de todo esto, el nodo `Normalizar y validar entrada` aplica los guardrails de acceso, longitud, inyección y modo.
 
 ## Ficha de control
 
@@ -9,9 +9,9 @@
 |---|---|
 | Entrada | Estado del caso (`gasto_usd`, `limite_costo_usd`, `llamadas`, `inicio_ms`) + agente solicitado + prompt construido |
 | Responsable | Orquestador (código, sin LLM) |
-| Criterios para autorizar | agente en lista permitida (A1–A4); llamadas < 10; tiempo < 120 s; costo estimado (tokens ≈ caracteres/3, salida = `max_tokens`) ≤ límite × 0.8 − gasto |
+| Criterios para autorizar | agente en lista permitida (A1–A4); llamadas < 10; tiempo < 240 s; costo estimado (tokens ≈ caracteres/3, salida = `max_tokens`) ≤ límite × 0.8 − gasto |
 | Máximo de iteraciones | Igual al loop de calidad (3) + 1 corrección de A2; tope global 10 llamadas por caso |
-| Tiempo límite | 30 s por llamada (nodo HTTP) y 120 s por caso |
+| Tiempo límite | 60 s por llamada (nodo HTTP) y 240 s por caso |
 | Presupuesto | 0.02 USD por caso por defecto; el usuario solo puede **bajarlo** (`presupuesto=`), nunca subirlo por encima de 0.05 |
 | Acción de retorno | Si se autoriza: llamar y registrar. Si la API falla: hasta 3 intentos del nodo; luego `error_api` |
 | Estado al agotar el límite | `detenido_presupuesto` o `detenido_limite`, con la causa en `motivo` y en la traza; no se hacen más llamadas |
