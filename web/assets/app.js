@@ -7,13 +7,13 @@
   const GRUPO = {
     pendiente_aprobacion: 'ok', aprobado_simulado: 'ok', rechazado: 'ok', expirado: 'ok',
     requiere_aclaracion: 'control', fuera_de_politica: 'control', bloqueado_politica: 'control', escalado_humano: 'control', detenido_presupuesto: 'control', detenido_limite: 'control',
-    error_api: 'falla', error_validacion: 'falla', error_skill: 'falla'
+    error_api: 'falla', error_validacion: 'falla', error_skill: 'falla', recibido: 'falla', en_proceso: 'falla'
   };
   const COLOR = { ok: '#0072B2', control: '#9CA3AF', falla: '#D55E00' };
   const LEGIBLE = {
     pendiente_aprobacion: 'Pendiente de aprobación', aprobado_simulado: 'Aprobado (simulado)', rechazado: 'Rechazado por asesor', expirado: 'Expirado',
     requiere_aclaracion: 'Requiere aclaración', fuera_de_politica: 'Fuera de política', bloqueado_politica: 'Bloqueado por política', escalado_humano: 'Escalado a humano',
-    detenido_presupuesto: 'Detenido por presupuesto', detenido_limite: 'Detenido por límite', error_api: 'Error del servicio de IA', error_validacion: 'Error de validación', error_skill: 'Error al cargar skills'
+    detenido_presupuesto: 'Detenido por presupuesto', detenido_limite: 'Detenido por límite', error_api: 'Error del servicio de IA', error_validacion: 'Error de validación', error_skill: 'Error al cargar skills', recibido: 'Sin terminar (recibido)', en_proceso: 'Sin terminar (en proceso)'
   };
   const AGENTE = { A1: 'A1 · Intake', A2: 'A2 · Datos', A3: 'A3 · Propuesta', A4: 'A4 · Revisión' };
   let datos = null;

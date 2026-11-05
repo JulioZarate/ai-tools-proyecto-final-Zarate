@@ -20,7 +20,16 @@ for (const [f,id] of Object.entries(ids)){ const w=JSON.parse(fs.readFileSync(d+
   fs.writeFileSync(d+"/"+f, JSON.stringify(w)); }' "$TMP/wf"
 
 for f in "$TMP"/wf/WF*.json; do "$N8N_BIN" import:workflow --input="$f" >/dev/null 2>&1; done
-for id in valoriaPruebaWF0 valoriaPruebaWF1 valoriaPruebaWF2; do "$N8N_BIN" publish:workflow --id="$id" >/dev/null 2>&1 || "$N8N_BIN" update:workflow --id="$id" --active=true >/dev/null 2>&1; done
+# WF2 de PRODUCCIÓN (el mismo archivo que se entrega) con una credencial de prueba para el encabezado.
+node -e '
+const fs=require("fs"),r=process.argv[1],d=process.argv[2];
+fs.writeFileSync(d+"/cred.json",JSON.stringify([{id:"credPruebaValoria",name:"Valoria clave webhooks (x-valoria-key)",type:"httpHeaderAuth",data:{name:"x-valoria-key",value:"clave-de-prueba-123"}}]));
+const w=JSON.parse(fs.readFileSync(r+"/n8n/WF2_export_sanitizado.json","utf8")); w.id="valoriaProdWF2"; w.active=false;
+for(const n of w.nodes) if(n.credentials&&n.credentials.httpHeaderAuth) n.credentials.httpHeaderAuth.id="credPruebaValoria";
+fs.writeFileSync(d+"/prodWF2.json",JSON.stringify(w));' "$RAIZ" "$TMP"
+"$N8N_BIN" import:credentials --input="$TMP/cred.json" >/dev/null 2>&1
+"$N8N_BIN" import:workflow --input="$TMP/prodWF2.json" >/dev/null 2>&1
+for id in valoriaPruebaWF0 valoriaPruebaWF1 valoriaPruebaWF2 valoriaProdWF2; do "$N8N_BIN" publish:workflow --id="$id" >/dev/null 2>&1 || "$N8N_BIN" update:workflow --id="$id" --active=true >/dev/null 2>&1; done
 
 node "$RAIZ/tests/n8n_local/mock_anthropic.mjs" > "$TMP/mock.log" 2>&1 & MOCK=$!
 (cd "$RAIZ" && python3 -m http.server 8788 --bind 127.0.0.1 > "$TMP/static.log" 2>&1) & STATIC=$!
@@ -29,3 +38,9 @@ trap 'kill $MOCK $STATIC $N8N 2>/dev/null || true' EXIT
 for i in $(seq 1 90); do curl -sf http://127.0.0.1:5690/healthz >/dev/null 2>&1 && break; sleep 2; done
 sleep 3
 node "$RAIZ/tests/n8n_local/escenarios.mjs"
+# Exportación de producción: sin clave / clave errónea / clave correcta, y validación como en GitHub Actions.
+URL=http://127.0.0.1:5690/webhook/valoria-export
+echo "export sin clave: HTTP $(curl -s -o /dev/null -w '%{http_code}' $URL)"
+echo "export clave errónea: HTTP $(curl -s -o /dev/null -w '%{http_code}' -H 'x-valoria-key: otra' $URL)"
+curl -sSf -H 'x-valoria-key: clave-de-prueba-123' $URL -o "$TMP/export_prod.json" && echo "export clave correcta: OK ($(wc -c < "$TMP/export_prod.json") bytes)"
+node -e 'const fs=require("fs");const j=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));const x=Array.isArray(j)?j[0]:j;if(x.esquema!=="valoria-export/1")throw new Error("esquema inesperado: "+JSON.stringify(x).slice(0,200));console.log("export prod: casos",x.casos.length,"llamadas",x.costos.length,"traza",x.traza.length);fs.writeFileSync(process.argv[2],JSON.stringify(x,null,2));' "$TMP/export_prod.json" "$TMP/export_prod_norm.json"

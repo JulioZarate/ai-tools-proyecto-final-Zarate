@@ -121,8 +121,7 @@
     },
     {
       "parameters": {
-        "respondWith": "json",
-        "responseBody": "={{ JSON.stringify($json) }}",
+        "respondWith": "firstIncomingItem",
         "options": {}
       },
       "id": "valoria-responder-exportacion",

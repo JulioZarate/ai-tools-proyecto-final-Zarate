@@ -27,10 +27,11 @@ const llm = exp.costos.map((k) => {
   const costo = Math.round(((k.tokens_entrada * cIn + k.tokens_salida * cOut) / 1e6) * 1e6) / 1e6;
   return { fecha_hora: k.fecha_hora, caso_id: k.caso_id, llamada_id: k.llamada_id, etapa: k.etapa, agente: k.agente, proveedor: k.proveedor, modelo: k.modelo,
     tokens_entrada: k.tokens_entrada, tokens_salida: k.tokens_salida, tokens_cache: k.tokens_cache || 0, duracion_voz_seg: 0, unidad_cobro: 'tokens',
-    tarifa_entrada: cIn, tarifa_salida: cOut, costo_usd: k.estado === 'ok' ? costo : 0, moneda: 'USD', estado: k.estado, reintento: 0,
+    // Solo una caída de la API (estado "error") no se cobra; sin_texto/refusal sí consumen tokens reportados.
+    tarifa_entrada: cIn, tarifa_salida: cOut, costo_usd: k.estado === 'error' ? 0 : costo, moneda: 'USD', estado: k.estado, reintento: 0,
     origen_dato: real ? (k.origen_dato || 'medido_api') : 'simulado_local_no_facturable',
-    notas: k.estado === 'ok' ? 'iteracion=' + k.iteracion : 'error de API: sin cobro confirmado; tokens estimados' };
-}).map((f) => (f.estado !== 'ok' ? { ...f, tokens_entrada: f.tokens_entrada, tokens_salida: 0, costo_usd: 0, unidad_cobro: 'tokens_estimados' } : f));
+    notas: k.estado === 'error' ? 'error de API: sin cobro confirmado; tokens estimados' : 'iteracion=' + k.iteracion + (k.estado !== 'ok' ? ' · ' + k.estado + ' (cobrado)' : '') };
+}).map((f) => (f.estado === 'error' ? { ...f, tokens_salida: 0, costo_usd: 0, unidad_cobro: 'tokens_estimados' } : f));
 const filas = manual.concat(llm);
 fs.writeFileSync(P('costos/costos.csv'), COLS.join(',') + '\n' + filas.map((f) => COLS.map((c) => celda(f[c])).join(',')).join('\n') + '\n');
 

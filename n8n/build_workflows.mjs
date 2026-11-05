@@ -334,7 +334,7 @@ function wfExport() {
   nodo('Nota', 'n8n-nodes-base.stickyNote', 1, [0, -260], { content: '## Exportación sanitizada\nGET con encabezado x-valoria-key. Devuelve solo campos no personales para el panel público. Úsalo con scripts/exportar.sh y después scripts/build_panel.mjs.', height: 200, width: 420 });
   con(ini, 'Leer casos'); con('Leer casos', 'Leer costos'); con('Leer costos', 'Leer traza'); con('Leer traza', 'Sanitizar exportación');
   if (!MODO_TEST) {
-    nodo('Responder exportación', 'n8n-nodes-base.respondToWebhook', 1.1, [1200, 0], { respondWith: 'json', responseBody: '={{ JSON.stringify($json) }}', options: {} });
+    nodo('Responder exportación', 'n8n-nodes-base.respondToWebhook', 1.1, [1200, 0], { respondWith: 'firstIncomingItem', options: {} });
     con('Sanitizar exportación', 'Responder exportación');
   }
   return { name: 'Valoria — Exportación sanitizada' + (MODO_TEST ? ' (PRUEBA LOCAL)' : ''), nodes: JSON.parse(JSON.stringify(nodos)), connections: JSON.parse(JSON.stringify(conexiones)),
