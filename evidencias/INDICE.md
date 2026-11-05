@@ -5,11 +5,11 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
 ## Enlaces de entrega
 | Elemento | Enlace |
 |---|---|
-| Repositorio (rama `main`, commit final) | ⬜ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate · commit `[hash]` |
-| Sitio GitHub Pages | ⬜ https://juliozarate.github.io/ai-tools-proyecto-final-Zarate/ |
-| Ejecución de Actions exitosa | ⬜ [enlace a la ejecución] |
-| Ejecución de Actions bloqueada por falla deliberada (P12) | ⬜ [enlace] — generar con `bash scripts/falla_deliberada.sh romper` y luego `reparar` |
-| Bot de Telegram | ⬜ @[usuario_bot] (acceso por canal privado del curso; sin token) |
+| Repositorio (rama `main`, commit final) | ✅ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate · commit final `[anotar al entregar]` |
+| Sitio GitHub Pages | ✅ https://juliozarate.github.io/ai-tools-proyecto-final-Zarate/ |
+| Ejecución de Actions exitosa | ✅ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate/actions/runs/42107774901 · actualización de datos: https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate/actions/runs/42107210567 |
+| Ejecución de Actions bloqueada por falla deliberada (P12) | ✅ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate/actions/runs/42107492452 |
+| Bot de Telegram | ✅ @IAtoolFJZbot (acceso por canal privado del curso; sin token) |
 | Video de respaldo (5–8 min) | ⬜ [enlace] |
 
 ## Rúbrica → evidencia
@@ -25,6 +25,12 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
 | 8 | Tokenización y costos (10) | `costos/tarifas.csv`, `costos/costos.csv`, `costos/resumen.md`, `costos/proyecciones.md` | 🟡 recalcular con export real |
 | 9 | Pruebas y reproducibilidad (7) | `tests/pruebas.csv`, `tests/unit/`, `tests/n8n_local/`, README, `docs/declaracion_uso_ia.md` | 🟡 |
 | 10 | Defensa (5) | Guion en `docs/guion_defensa.md` | ⬜ |
+
+## Evidencias en el entorno real (n8n Cloud + API de Anthropic)
+- `cloud/resultados_cloud.json` — resultados P01, P02, P03, P04 (parcial), P06, P08, P11, P12, P13, P14 y hallazgos corregidos.
+- `../datos/export/export_sanitizado.json` — exportación real: 6 casos (5 Telegram, 1 voz), 23 llamadas LLM, 60 pasos de traza.
+- Casos clave: VAL-261105-YQZY (completo, V1→V2 natural), VAL-261105-AQJJ (rechazado), VAL-261105-F66J (vencimiento), VAL-261105-4DM3 (voz), VAL-261104-ZCGU y VAL-261105-MPWJ (fallas controladas y corregidas).
+- Capturas a guardar en `cloud/`: Telegram (aprobación, rechazo, bloqueo), ElevenLabs (Preview y widget en Pages), n8n (ejecución con A1–A4).
 
 ## Evidencias locales disponibles
 - `local/resultado_integracion_local.json` — 12/12 escenarios (n8n 2.46.4 + simulador de API).
