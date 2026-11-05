@@ -1,13 +1,13 @@
 {
   "esquema": "valoria-panel/1",
-  "generado_en": "2026-11-04T05:18:40.769Z",
-  "exportado_en": "2026-11-04T05:18:23.519Z",
+  "generado_en": "2026-11-05T02:03:46.814Z",
+  "exportado_en": "2026-11-05T02:03:14.875Z",
   "origen": "muestra_simulador",
   "fuente": "MUESTRA: ejecución local de n8n con simulador de la API (tokens y costos simulados, no reales)",
   "datos_ficticios": true,
   "periodo": {
-    "desde": "2026-11-04T05:17:04.021Z",
-    "hasta": "2026-11-04T05:18:22.751Z"
+    "desde": "2026-11-05T02:01:55.739Z",
+    "hasta": "2026-11-05T02:03:14.141Z"
   },
   "kpis": {
     "aprobacion_primera_revision": {
@@ -96,315 +96,315 @@
   },
   "costos": [
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A1",
       "costo_usd": 0.000073,
       "tokens_entrada": 431,
       "tokens_salida": 60
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A2",
       "costo_usd": 0.000162,
       "tokens_entrada": 778,
       "tokens_salida": 169
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A3",
       "costo_usd": 0.000154,
       "tokens_entrada": 796,
       "tokens_salida": 149
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A4",
       "costo_usd": 0.000089,
       "tokens_entrada": 767,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A1",
       "costo_usd": 0.000074,
       "tokens_entrada": 432,
       "tokens_salida": 61
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A2",
       "costo_usd": 0.000183,
       "tokens_entrada": 878,
       "tokens_salida": 190
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A3",
       "costo_usd": 0.000163,
       "tokens_entrada": 869,
       "tokens_salida": 152
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A4",
       "costo_usd": 0.000095,
       "tokens_entrada": 824,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A1",
       "costo_usd": 0.000072,
       "tokens_entrada": 429,
       "tokens_salida": 59
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A2",
       "costo_usd": 0.000208,
       "tokens_entrada": 1028,
       "tokens_salida": 211
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A3",
       "costo_usd": 0.000174,
       "tokens_entrada": 952,
       "tokens_salida": 158
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A4",
       "costo_usd": 0.000099,
       "tokens_entrada": 865,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A1",
       "costo_usd": 0.000072,
       "tokens_entrada": 429,
       "tokens_salida": 58
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A2",
       "costo_usd": 0.000208,
       "tokens_entrada": 1028,
       "tokens_salida": 211
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A3",
       "costo_usd": 0.000171,
       "tokens_entrada": 921,
       "tokens_salida": 158
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A4",
       "costo_usd": 0.00013,
       "tokens_entrada": 918,
       "tokens_salida": 77
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A3",
       "costo_usd": 0.000183,
       "tokens_entrada": 1035,
       "tokens_salida": 158
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A4",
       "costo_usd": 0.000099,
       "tokens_entrada": 864,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A1",
       "costo_usd": 0.000085,
       "tokens_entrada": 421,
       "tokens_salida": 85
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A1",
       "costo_usd": 0.000073,
       "tokens_entrada": 435,
       "tokens_salida": 58
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A2",
       "costo_usd": 0.000194,
       "tokens_entrada": 989,
       "tokens_salida": 190
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A3",
       "costo_usd": 0.000163,
       "tokens_entrada": 868,
       "tokens_salida": 152
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A4",
       "costo_usd": 0.000095,
       "tokens_entrada": 824,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A1",
       "costo_usd": 0.000071,
       "tokens_entrada": 428,
       "tokens_salida": 57
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A2",
       "costo_usd": 0.000194,
       "tokens_entrada": 987,
       "tokens_salida": 190
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A3",
       "costo_usd": 0.000163,
       "tokens_entrada": 866,
       "tokens_salida": 152
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A4",
       "costo_usd": 0.000095,
       "tokens_entrada": 823,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A1",
       "costo_usd": 0.000072,
       "tokens_entrada": 429,
       "tokens_salida": 58
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A2",
       "costo_usd": 0.000183,
       "tokens_entrada": 875,
       "tokens_salida": 190
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A3",
       "costo_usd": 0.000163,
       "tokens_entrada": 866,
       "tokens_salida": 152
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A4",
       "costo_usd": 0.000095,
       "tokens_entrada": 821,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A1",
       "costo_usd": 0.000073,
       "tokens_entrada": 430,
       "tokens_salida": 59
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A2",
       "costo_usd": 0.000217,
       "tokens_entrada": 1112,
       "tokens_salida": 211
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A3",
       "costo_usd": 0.000172,
       "tokens_entrada": 922,
       "tokens_salida": 159
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A4",
       "costo_usd": 0.000099,
       "tokens_entrada": 866,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A1",
       "costo_usd": 0.000072,
       "tokens_entrada": 422,
       "tokens_salida": 59
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A2",
       "costo_usd": 0.000183,
       "tokens_entrada": 876,
       "tokens_salida": 190
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A3",
       "costo_usd": 0.000163,
       "tokens_entrada": 866,
       "tokens_salida": 152
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A4",
       "costo_usd": 0.000095,
       "tokens_entrada": 822,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "agente": "A1",
       "costo_usd": 0,
       "tokens_entrada": 505,
       "tokens_salida": 0
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A1",
       "costo_usd": 0.000075,
       "tokens_entrada": 440,
       "tokens_salida": 61
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A2",
       "costo_usd": 0.000209,
       "tokens_entrada": 1031,
       "tokens_salida": 211
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A3",
       "costo_usd": 0.000171,
       "tokens_entrada": 922,
       "tokens_salida": 158
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A4",
       "costo_usd": 0.000099,
       "tokens_entrada": 866,
       "tokens_salida": 25
     },
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "agente": "A1",
       "costo_usd": 0.000072,
       "tokens_entrada": 432,
@@ -413,7 +413,7 @@
   ],
   "casos": [
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "canal": "telegram",
       "estado": "fuera_de_politica",
       "version_propuesta": 0,
@@ -427,15 +427,15 @@
       "rend_esperado_pct": null,
       "aprobado_primera_revision": null,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:22.751Z",
-      "actualizado_en": "2026-11-04T05:18:22.895Z",
+      "creado_en": "2026-11-05T02:03:14.141Z",
+      "actualizado_en": "2026-11-05T02:03:14.241Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": "A1"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "canal": "voz",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -449,15 +449,15 @@
       "rend_esperado_pct": 9.48,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:21.689Z",
-      "actualizado_en": "2026-11-04T05:18:21.954Z",
+      "creado_en": "2026-11-05T02:03:13.078Z",
+      "actualizado_en": "2026-11-05T02:03:13.393Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "canal": "telegram",
       "estado": "error_api",
       "version_propuesta": 0,
@@ -471,15 +471,15 @@
       "rend_esperado_pct": null,
       "aprobado_primera_revision": null,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:18.515Z",
-      "actualizado_en": "2026-11-04T05:18:20.847Z",
+      "creado_en": "2026-11-05T02:03:10.460Z",
+      "actualizado_en": "2026-11-05T02:03:12.605Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": "A1"
     },
     {
-      "caso_id": "VAL-261104-PCFC",
+      "caso_id": "VAL-261105-7YTW",
       "canal": "telegram",
       "estado": "detenido_presupuesto",
       "version_propuesta": 0,
@@ -493,15 +493,15 @@
       "rend_esperado_pct": null,
       "aprobado_primera_revision": null,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:17.668Z",
-      "actualizado_en": "2026-11-04T05:18:17.779Z",
+      "creado_en": "2026-11-05T02:03:09.589Z",
+      "actualizado_en": "2026-11-05T02:03:09.743Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": ""
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -515,15 +515,15 @@
       "rend_esperado_pct": 9.31,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:13.533Z",
-      "actualizado_en": "2026-11-04T05:18:13.893Z",
+      "creado_en": "2026-11-05T02:03:05.465Z",
+      "actualizado_en": "2026-11-05T02:03:05.801Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "canal": "telegram",
       "estado": "expirado",
       "version_propuesta": 1,
@@ -537,15 +537,15 @@
       "rend_esperado_pct": 9.67,
       "aprobado_primera_revision": true,
       "decision": "expirado",
-      "creado_en": "2026-11-04T05:17:21.091Z",
-      "actualizado_en": "2026-11-04T05:18:10.698Z",
-      "decidido_en": "2026-11-04T05:18:10.698Z",
+      "creado_en": "2026-11-05T02:02:12.856Z",
+      "actualizado_en": "2026-11-05T02:03:02.526Z",
+      "decidido_en": "2026-11-05T02:03:02.526Z",
       "ciclo_decision_min": 0.8,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "canal": "telegram",
       "estado": "rechazado",
       "version_propuesta": 1,
@@ -559,15 +559,15 @@
       "rend_esperado_pct": 9.31,
       "aprobado_primera_revision": true,
       "decision": "rechazado",
-      "creado_en": "2026-11-04T05:17:20.281Z",
-      "actualizado_en": "2026-11-04T05:17:22.006Z",
-      "decidido_en": "2026-11-04T05:17:22.006Z",
+      "creado_en": "2026-11-05T02:02:12.033Z",
+      "actualizado_en": "2026-11-05T02:02:13.811Z",
+      "decidido_en": "2026-11-05T02:02:13.811Z",
       "ciclo_decision_min": 0,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "canal": "telegram",
       "estado": "aprobado_simulado",
       "version_propuesta": 1,
@@ -581,15 +581,15 @@
       "rend_esperado_pct": 9.49,
       "aprobado_primera_revision": true,
       "decision": "aprobado",
-      "creado_en": "2026-11-04T05:17:19.482Z",
-      "actualizado_en": "2026-11-04T05:17:21.972Z",
-      "decidido_en": "2026-11-04T05:17:21.972Z",
+      "creado_en": "2026-11-05T02:02:11.217Z",
+      "actualizado_en": "2026-11-05T02:02:13.770Z",
+      "decidido_en": "2026-11-05T02:02:13.770Z",
       "ciclo_decision_min": 0,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -603,15 +603,15 @@
       "rend_esperado_pct": 9.49,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:07.208Z",
-      "actualizado_en": "2026-11-04T05:17:08.299Z",
+      "creado_en": "2026-11-05T02:01:58.985Z",
+      "actualizado_en": "2026-11-05T02:02:00.145Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 2,
@@ -625,15 +625,15 @@
       "rend_esperado_pct": 9.48,
       "aprobado_primera_revision": false,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:06.377Z",
-      "actualizado_en": "2026-11-04T05:17:06.713Z",
+      "creado_en": "2026-11-05T02:01:58.165Z",
+      "actualizado_en": "2026-11-05T02:01:58.521Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "falla_v1",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -647,15 +647,15 @@
       "rend_esperado_pct": 9.48,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:05.604Z",
-      "actualizado_en": "2026-11-04T05:17:05.838Z",
+      "creado_en": "2026-11-05T02:01:57.362Z",
+      "actualizado_en": "2026-11-05T02:01:57.660Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -669,15 +669,15 @@
       "rend_esperado_pct": 9.31,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:04.770Z",
-      "actualizado_en": "2026-11-04T05:17:05.074Z",
+      "creado_en": "2026-11-05T02:01:56.500Z",
+      "actualizado_en": "2026-11-05T02:01:56.810Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",
       "agentes": "A1,A2,A3,A4"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -691,8 +691,8 @@
       "rend_esperado_pct": 9.45,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:04.021Z",
-      "actualizado_en": "2026-11-04T05:17:04.411Z",
+      "creado_en": "2026-11-05T02:01:55.739Z",
+      "actualizado_en": "2026-11-05T02:01:56.156Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "",

@@ -12,7 +12,7 @@
 | Criterio de salida exitosa | `hallazgos_codigo = []` **y** veredicto LLM de A4 = `aprobado` para la versión vigente |
 | Máximo de iteraciones | **3 totales** (una iteración = una versión de propuesta generada y revisada). Se mantiene el punto de partida de la guía: con el simulador y con datos reales la corrección suele bastar en la 2.ª |
 | Tiempo límite | 120 s por caso (guardia antes de cada llamada) |
-| Presupuesto | `limite_costo_usd` del caso (0.01 USD por defecto, 0.02 máximo) con 20% de reserva |
+| Presupuesto | `limite_costo_usd` del caso (0.02 USD por defecto, 0.05 máximo) con 20% de reserva |
 | Acción de retorno | Las correcciones de A4 (hallazgos de código + correcciones LLM) se envían a A3 como "correcciones obligatorias" |
 | Estado al agotar el límite | `escalado_humano` con la última versión y sus hallazgos; nunca `pendiente_aprobacion` |
 | Salida inválida de A3 (JSON) | Cuenta como iteración y regresa con la corrección "responde solo JSON" |

@@ -12,7 +12,7 @@
 | Criterios para autorizar | agente en lista permitida (A1–A4); llamadas < 10; tiempo < 120 s; costo estimado (tokens ≈ caracteres/3, salida = `max_tokens`) ≤ límite × 0.8 − gasto |
 | Máximo de iteraciones | Igual al loop de calidad (3) + 1 corrección de A2; tope global 10 llamadas por caso |
 | Tiempo límite | 30 s por llamada (nodo HTTP) y 120 s por caso |
-| Presupuesto | 0.01 USD por caso por defecto; el usuario solo puede **bajarlo** (`presupuesto=`), nunca subirlo por encima de 0.02 |
+| Presupuesto | 0.02 USD por caso por defecto; el usuario solo puede **bajarlo** (`presupuesto=`), nunca subirlo por encima de 0.05 |
 | Acción de retorno | Si se autoriza: llamar y registrar. Si la API falla: hasta 3 intentos del nodo; luego `error_api` |
 | Estado al agotar el límite | `detenido_presupuesto` o `detenido_limite`, con la causa en `motivo` y en la traza; no se hacen más llamadas |
 

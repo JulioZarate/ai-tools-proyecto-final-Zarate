@@ -12,7 +12,7 @@
     "objetivo": {"type": "string", "description": "Tarea del agente (intake, seleccion, redaccion, revision)"},
     "datos": {"type": "object", "description": "texto enmascarado, requerimiento, elegibles, calculo o redaccion según el agente"},
     "modo": {"const": "SIMULADO"},
-    "limite_costo_usd": {"type": "number", "exclusiveMinimum": 0, "maximum": 0.02},
+    "limite_costo_usd": {"type": "number", "exclusiveMinimum": 0, "maximum": 0.05},
     "version_propuesta": {"type": "integer", "minimum": 0},
     "iteracion": {"type": "integer", "minimum": 0, "maximum": 3},
     "correcciones": {"type": "array", "items": {"type": "string"}}

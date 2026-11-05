@@ -1,11 +1,11 @@
 {
   "esquema": "valoria-export/1",
-  "generado_en": "2026-11-04T05:18:23.519Z",
+  "generado_en": "2026-11-05T02:03:14.875Z",
   "datos_ficticios": true,
   "fuente": "n8n Data Tables valoria_casos, valoria_costos, valoria_traza (exportación sanitizada)",
   "casos": [
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -19,14 +19,14 @@
       "rend_esperado_pct": 9.45,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:04.021Z",
-      "actualizado_en": "2026-11-04T05:17:04.411Z",
+      "creado_en": "2026-11-05T02:01:55.739Z",
+      "actualizado_en": "2026-11-05T02:01:56.156Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -40,14 +40,14 @@
       "rend_esperado_pct": 9.31,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:04.770Z",
-      "actualizado_en": "2026-11-04T05:17:05.074Z",
+      "creado_en": "2026-11-05T02:01:56.500Z",
+      "actualizado_en": "2026-11-05T02:01:56.810Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -61,14 +61,14 @@
       "rend_esperado_pct": 9.48,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:05.604Z",
-      "actualizado_en": "2026-11-04T05:17:05.838Z",
+      "creado_en": "2026-11-05T02:01:57.362Z",
+      "actualizado_en": "2026-11-05T02:01:57.660Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 2,
@@ -82,14 +82,14 @@
       "rend_esperado_pct": 9.48,
       "aprobado_primera_revision": false,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:06.377Z",
-      "actualizado_en": "2026-11-04T05:17:06.713Z",
+      "creado_en": "2026-11-05T02:01:58.165Z",
+      "actualizado_en": "2026-11-05T02:01:58.521Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": "falla_v1"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -103,14 +103,14 @@
       "rend_esperado_pct": 9.49,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:17:07.208Z",
-      "actualizado_en": "2026-11-04T05:17:08.299Z",
+      "creado_en": "2026-11-05T02:01:58.985Z",
+      "actualizado_en": "2026-11-05T02:02:00.145Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "canal": "telegram",
       "estado": "aprobado_simulado",
       "version_propuesta": 1,
@@ -124,14 +124,14 @@
       "rend_esperado_pct": 9.49,
       "aprobado_primera_revision": true,
       "decision": "aprobado",
-      "creado_en": "2026-11-04T05:17:19.482Z",
-      "actualizado_en": "2026-11-04T05:17:21.972Z",
-      "decidido_en": "2026-11-04T05:17:21.972Z",
+      "creado_en": "2026-11-05T02:02:11.217Z",
+      "actualizado_en": "2026-11-05T02:02:13.770Z",
+      "decidido_en": "2026-11-05T02:02:13.770Z",
       "ciclo_decision_min": 0,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "canal": "telegram",
       "estado": "rechazado",
       "version_propuesta": 1,
@@ -145,14 +145,14 @@
       "rend_esperado_pct": 9.31,
       "aprobado_primera_revision": true,
       "decision": "rechazado",
-      "creado_en": "2026-11-04T05:17:20.281Z",
-      "actualizado_en": "2026-11-04T05:17:22.006Z",
-      "decidido_en": "2026-11-04T05:17:22.006Z",
+      "creado_en": "2026-11-05T02:02:12.033Z",
+      "actualizado_en": "2026-11-05T02:02:13.811Z",
+      "decidido_en": "2026-11-05T02:02:13.811Z",
       "ciclo_decision_min": 0,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "canal": "telegram",
       "estado": "expirado",
       "version_propuesta": 1,
@@ -166,14 +166,14 @@
       "rend_esperado_pct": 9.67,
       "aprobado_primera_revision": true,
       "decision": "expirado",
-      "creado_en": "2026-11-04T05:17:21.091Z",
-      "actualizado_en": "2026-11-04T05:18:10.698Z",
-      "decidido_en": "2026-11-04T05:18:10.698Z",
+      "creado_en": "2026-11-05T02:02:12.856Z",
+      "actualizado_en": "2026-11-05T02:03:02.526Z",
+      "decidido_en": "2026-11-05T02:03:02.526Z",
       "ciclo_decision_min": 0.8,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "canal": "telegram",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -187,14 +187,14 @@
       "rend_esperado_pct": 9.31,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:13.533Z",
-      "actualizado_en": "2026-11-04T05:18:13.893Z",
+      "creado_en": "2026-11-05T02:03:05.465Z",
+      "actualizado_en": "2026-11-05T02:03:05.801Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-PCFC",
+      "caso_id": "VAL-261105-7YTW",
       "canal": "telegram",
       "estado": "detenido_presupuesto",
       "version_propuesta": 0,
@@ -208,14 +208,14 @@
       "rend_esperado_pct": null,
       "aprobado_primera_revision": null,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:17.668Z",
-      "actualizado_en": "2026-11-04T05:18:17.779Z",
+      "creado_en": "2026-11-05T02:03:09.589Z",
+      "actualizado_en": "2026-11-05T02:03:09.743Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "canal": "telegram",
       "estado": "error_api",
       "version_propuesta": 0,
@@ -229,14 +229,14 @@
       "rend_esperado_pct": null,
       "aprobado_primera_revision": null,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:18.515Z",
-      "actualizado_en": "2026-11-04T05:18:20.847Z",
+      "creado_en": "2026-11-05T02:03:10.460Z",
+      "actualizado_en": "2026-11-05T02:03:12.605Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "canal": "voz",
       "estado": "pendiente_aprobacion",
       "version_propuesta": 1,
@@ -250,14 +250,14 @@
       "rend_esperado_pct": 9.48,
       "aprobado_primera_revision": true,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:21.689Z",
-      "actualizado_en": "2026-11-04T05:18:21.954Z",
+      "creado_en": "2026-11-05T02:03:13.078Z",
+      "actualizado_en": "2026-11-05T02:03:13.393Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
     },
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "canal": "telegram",
       "estado": "fuera_de_politica",
       "version_propuesta": 0,
@@ -271,8 +271,8 @@
       "rend_esperado_pct": null,
       "aprobado_primera_revision": null,
       "decision": "",
-      "creado_en": "2026-11-04T05:18:22.751Z",
-      "actualizado_en": "2026-11-04T05:18:22.895Z",
+      "creado_en": "2026-11-05T02:03:14.141Z",
+      "actualizado_en": "2026-11-05T02:03:14.241Z",
       "decidido_en": "",
       "ciclo_decision_min": null,
       "demo": ""
@@ -280,9 +280,9 @@
   ],
   "costos": [
     {
-      "fecha_hora": "2026-11-04T05:17:04.205Z",
-      "caso_id": "VAL-261104-QYJ2",
-      "llamada_id": "VAL-261104-QYJ2-L01",
+      "fecha_hora": "2026-11-05T02:01:55.949Z",
+      "caso_id": "VAL-261105-3R7C",
+      "llamada_id": "VAL-261105-3R7C-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -296,9 +296,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:04.263Z",
-      "caso_id": "VAL-261104-QYJ2",
-      "llamada_id": "VAL-261104-QYJ2-L02",
+      "fecha_hora": "2026-11-05T02:01:56.014Z",
+      "caso_id": "VAL-261105-3R7C",
+      "llamada_id": "VAL-261105-3R7C-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -312,9 +312,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:04.319Z",
-      "caso_id": "VAL-261104-QYJ2",
-      "llamada_id": "VAL-261104-QYJ2-L03",
+      "fecha_hora": "2026-11-05T02:01:56.078Z",
+      "caso_id": "VAL-261105-3R7C",
+      "llamada_id": "VAL-261105-3R7C-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -328,9 +328,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:04.396Z",
-      "caso_id": "VAL-261104-QYJ2",
-      "llamada_id": "VAL-261104-QYJ2-L04",
+      "fecha_hora": "2026-11-05T02:01:56.134Z",
+      "caso_id": "VAL-261105-3R7C",
+      "llamada_id": "VAL-261105-3R7C-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -344,9 +344,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:04.893Z",
-      "caso_id": "VAL-261104-8C8Q",
-      "llamada_id": "VAL-261104-8C8Q-L01",
+      "fecha_hora": "2026-11-05T02:01:56.628Z",
+      "caso_id": "VAL-261105-7TUX",
+      "llamada_id": "VAL-261105-7TUX-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -360,9 +360,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:04.945Z",
-      "caso_id": "VAL-261104-8C8Q",
-      "llamada_id": "VAL-261104-8C8Q-L02",
+      "fecha_hora": "2026-11-05T02:01:56.675Z",
+      "caso_id": "VAL-261105-7TUX",
+      "llamada_id": "VAL-261105-7TUX-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -376,9 +376,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:04.993Z",
-      "caso_id": "VAL-261104-8C8Q",
-      "llamada_id": "VAL-261104-8C8Q-L03",
+      "fecha_hora": "2026-11-05T02:01:56.726Z",
+      "caso_id": "VAL-261105-7TUX",
+      "llamada_id": "VAL-261105-7TUX-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -392,9 +392,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:05.049Z",
-      "caso_id": "VAL-261104-8C8Q",
-      "llamada_id": "VAL-261104-8C8Q-L04",
+      "fecha_hora": "2026-11-05T02:01:56.790Z",
+      "caso_id": "VAL-261105-7TUX",
+      "llamada_id": "VAL-261105-7TUX-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -408,9 +408,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:05.704Z",
-      "caso_id": "VAL-261104-ELUN",
-      "llamada_id": "VAL-261104-ELUN-L01",
+      "fecha_hora": "2026-11-05T02:01:57.478Z",
+      "caso_id": "VAL-261105-5K8P",
+      "llamada_id": "VAL-261105-5K8P-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -424,9 +424,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:05.744Z",
-      "caso_id": "VAL-261104-ELUN",
-      "llamada_id": "VAL-261104-ELUN-L02",
+      "fecha_hora": "2026-11-05T02:01:57.533Z",
+      "caso_id": "VAL-261105-5K8P",
+      "llamada_id": "VAL-261105-5K8P-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -440,9 +440,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:05.785Z",
-      "caso_id": "VAL-261104-ELUN",
-      "llamada_id": "VAL-261104-ELUN-L03",
+      "fecha_hora": "2026-11-05T02:01:57.588Z",
+      "caso_id": "VAL-261105-5K8P",
+      "llamada_id": "VAL-261105-5K8P-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -456,9 +456,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:05.825Z",
-      "caso_id": "VAL-261104-ELUN",
-      "llamada_id": "VAL-261104-ELUN-L04",
+      "fecha_hora": "2026-11-05T02:01:57.646Z",
+      "caso_id": "VAL-261105-5K8P",
+      "llamada_id": "VAL-261105-5K8P-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -472,9 +472,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:06.473Z",
-      "caso_id": "VAL-261104-YL7V",
-      "llamada_id": "VAL-261104-YL7V-L01",
+      "fecha_hora": "2026-11-05T02:01:58.276Z",
+      "caso_id": "VAL-261105-3693",
+      "llamada_id": "VAL-261105-3693-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -488,9 +488,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:06.529Z",
-      "caso_id": "VAL-261104-YL7V",
-      "llamada_id": "VAL-261104-YL7V-L02",
+      "fecha_hora": "2026-11-05T02:01:58.322Z",
+      "caso_id": "VAL-261105-3693",
+      "llamada_id": "VAL-261105-3693-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -504,9 +504,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:06.583Z",
-      "caso_id": "VAL-261104-YL7V",
-      "llamada_id": "VAL-261104-YL7V-L03",
+      "fecha_hora": "2026-11-05T02:01:58.372Z",
+      "caso_id": "VAL-261105-3693",
+      "llamada_id": "VAL-261105-3693-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -520,9 +520,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:06.624Z",
-      "caso_id": "VAL-261104-YL7V",
-      "llamada_id": "VAL-261104-YL7V-L04",
+      "fecha_hora": "2026-11-05T02:01:58.418Z",
+      "caso_id": "VAL-261105-3693",
+      "llamada_id": "VAL-261105-3693-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -536,9 +536,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:06.661Z",
-      "caso_id": "VAL-261104-YL7V",
-      "llamada_id": "VAL-261104-YL7V-L05",
+      "fecha_hora": "2026-11-05T02:01:58.464Z",
+      "caso_id": "VAL-261105-3693",
+      "llamada_id": "VAL-261105-3693-L05",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -552,9 +552,9 @@
       "iteracion": 2
     },
     {
-      "fecha_hora": "2026-11-04T05:17:06.700Z",
-      "caso_id": "VAL-261104-YL7V",
-      "llamada_id": "VAL-261104-YL7V-L06",
+      "fecha_hora": "2026-11-05T02:01:58.506Z",
+      "caso_id": "VAL-261105-3693",
+      "llamada_id": "VAL-261105-3693-L06",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -568,9 +568,9 @@
       "iteracion": 2
     },
     {
-      "fecha_hora": "2026-11-04T05:17:07.305Z",
-      "caso_id": "VAL-261104-NSLU",
-      "llamada_id": "VAL-261104-NSLU-L01",
+      "fecha_hora": "2026-11-05T02:01:59.095Z",
+      "caso_id": "VAL-261105-4B9F",
+      "llamada_id": "VAL-261105-4B9F-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -584,9 +584,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:08.153Z",
-      "caso_id": "VAL-261104-NSLU",
-      "llamada_id": "VAL-261104-NSLU-L02",
+      "fecha_hora": "2026-11-05T02:01:59.919Z",
+      "caso_id": "VAL-261105-4B9F",
+      "llamada_id": "VAL-261105-4B9F-L02",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -600,9 +600,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:08.193Z",
-      "caso_id": "VAL-261104-NSLU",
-      "llamada_id": "VAL-261104-NSLU-L03",
+      "fecha_hora": "2026-11-05T02:01:59.974Z",
+      "caso_id": "VAL-261105-4B9F",
+      "llamada_id": "VAL-261105-4B9F-L03",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -616,9 +616,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:08.243Z",
-      "caso_id": "VAL-261104-NSLU",
-      "llamada_id": "VAL-261104-NSLU-L04",
+      "fecha_hora": "2026-11-05T02:02:00.085Z",
+      "caso_id": "VAL-261105-4B9F",
+      "llamada_id": "VAL-261105-4B9F-L04",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -632,9 +632,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:08.284Z",
-      "caso_id": "VAL-261104-NSLU",
-      "llamada_id": "VAL-261104-NSLU-L05",
+      "fecha_hora": "2026-11-05T02:02:00.133Z",
+      "caso_id": "VAL-261105-4B9F",
+      "llamada_id": "VAL-261105-4B9F-L05",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -648,9 +648,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:19.570Z",
-      "caso_id": "VAL-261104-4A5X",
-      "llamada_id": "VAL-261104-4A5X-L01",
+      "fecha_hora": "2026-11-05T02:02:11.333Z",
+      "caso_id": "VAL-261105-XSFV",
+      "llamada_id": "VAL-261105-XSFV-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -664,9 +664,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:19.606Z",
-      "caso_id": "VAL-261104-4A5X",
-      "llamada_id": "VAL-261104-4A5X-L02",
+      "fecha_hora": "2026-11-05T02:02:11.385Z",
+      "caso_id": "VAL-261105-XSFV",
+      "llamada_id": "VAL-261105-XSFV-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -680,9 +680,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:19.640Z",
-      "caso_id": "VAL-261104-4A5X",
-      "llamada_id": "VAL-261104-4A5X-L03",
+      "fecha_hora": "2026-11-05T02:02:11.443Z",
+      "caso_id": "VAL-261105-XSFV",
+      "llamada_id": "VAL-261105-XSFV-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -696,9 +696,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:19.691Z",
-      "caso_id": "VAL-261104-4A5X",
-      "llamada_id": "VAL-261104-4A5X-L04",
+      "fecha_hora": "2026-11-05T02:02:11.488Z",
+      "caso_id": "VAL-261105-XSFV",
+      "llamada_id": "VAL-261105-XSFV-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -712,9 +712,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:20.359Z",
-      "caso_id": "VAL-261104-W3D7",
-      "llamada_id": "VAL-261104-W3D7-L01",
+      "fecha_hora": "2026-11-05T02:02:12.155Z",
+      "caso_id": "VAL-261105-TUHN",
+      "llamada_id": "VAL-261105-TUHN-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -728,9 +728,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:20.393Z",
-      "caso_id": "VAL-261104-W3D7",
-      "llamada_id": "VAL-261104-W3D7-L02",
+      "fecha_hora": "2026-11-05T02:02:12.204Z",
+      "caso_id": "VAL-261105-TUHN",
+      "llamada_id": "VAL-261105-TUHN-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -744,9 +744,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:20.434Z",
-      "caso_id": "VAL-261104-W3D7",
-      "llamada_id": "VAL-261104-W3D7-L03",
+      "fecha_hora": "2026-11-05T02:02:12.245Z",
+      "caso_id": "VAL-261105-TUHN",
+      "llamada_id": "VAL-261105-TUHN-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -760,9 +760,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:20.486Z",
-      "caso_id": "VAL-261104-W3D7",
-      "llamada_id": "VAL-261104-W3D7-L04",
+      "fecha_hora": "2026-11-05T02:02:12.290Z",
+      "caso_id": "VAL-261105-TUHN",
+      "llamada_id": "VAL-261105-TUHN-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -776,9 +776,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:21.176Z",
-      "caso_id": "VAL-261104-Y84L",
-      "llamada_id": "VAL-261104-Y84L-L01",
+      "fecha_hora": "2026-11-05T02:02:12.962Z",
+      "caso_id": "VAL-261105-DBZ3",
+      "llamada_id": "VAL-261105-DBZ3-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -792,9 +792,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:21.210Z",
-      "caso_id": "VAL-261104-Y84L",
-      "llamada_id": "VAL-261104-Y84L-L02",
+      "fecha_hora": "2026-11-05T02:02:13.007Z",
+      "caso_id": "VAL-261105-DBZ3",
+      "llamada_id": "VAL-261105-DBZ3-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -808,9 +808,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:17:21.256Z",
-      "caso_id": "VAL-261104-Y84L",
-      "llamada_id": "VAL-261104-Y84L-L03",
+      "fecha_hora": "2026-11-05T02:02:13.050Z",
+      "caso_id": "VAL-261105-DBZ3",
+      "llamada_id": "VAL-261105-DBZ3-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -824,9 +824,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:17:21.289Z",
-      "caso_id": "VAL-261104-Y84L",
-      "llamada_id": "VAL-261104-Y84L-L04",
+      "fecha_hora": "2026-11-05T02:02:13.096Z",
+      "caso_id": "VAL-261105-DBZ3",
+      "llamada_id": "VAL-261105-DBZ3-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -840,9 +840,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:18:13.691Z",
-      "caso_id": "VAL-261104-9P3K",
-      "llamada_id": "VAL-261104-9P3K-L01",
+      "fecha_hora": "2026-11-05T02:03:05.635Z",
+      "caso_id": "VAL-261105-26Y3",
+      "llamada_id": "VAL-261105-26Y3-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -856,9 +856,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:18:13.751Z",
-      "caso_id": "VAL-261104-9P3K",
-      "llamada_id": "VAL-261104-9P3K-L02",
+      "fecha_hora": "2026-11-05T02:03:05.688Z",
+      "caso_id": "VAL-261105-26Y3",
+      "llamada_id": "VAL-261105-26Y3-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -872,9 +872,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:18:13.838Z",
-      "caso_id": "VAL-261104-9P3K",
-      "llamada_id": "VAL-261104-9P3K-L03",
+      "fecha_hora": "2026-11-05T02:03:05.738Z",
+      "caso_id": "VAL-261105-26Y3",
+      "llamada_id": "VAL-261105-26Y3-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -888,9 +888,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:18:13.881Z",
-      "caso_id": "VAL-261104-9P3K",
-      "llamada_id": "VAL-261104-9P3K-L04",
+      "fecha_hora": "2026-11-05T02:03:05.788Z",
+      "caso_id": "VAL-261105-26Y3",
+      "llamada_id": "VAL-261105-26Y3-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -904,9 +904,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:18:20.834Z",
-      "caso_id": "VAL-261104-BQWN",
-      "llamada_id": "VAL-261104-BQWN-L01",
+      "fecha_hora": "2026-11-05T02:03:12.582Z",
+      "caso_id": "VAL-261105-ES7R",
+      "llamada_id": "VAL-261105-ES7R-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -920,9 +920,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:18:21.817Z",
-      "caso_id": "VAL-261104-KBSA",
-      "llamada_id": "VAL-261104-KBSA-L01",
+      "fecha_hora": "2026-11-05T02:03:13.221Z",
+      "caso_id": "VAL-261105-KALB",
+      "llamada_id": "VAL-261105-KALB-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -936,9 +936,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:18:21.855Z",
-      "caso_id": "VAL-261104-KBSA",
-      "llamada_id": "VAL-261104-KBSA-L02",
+      "fecha_hora": "2026-11-05T02:03:13.278Z",
+      "caso_id": "VAL-261105-KALB",
+      "llamada_id": "VAL-261105-KALB-L02",
       "etapa": "agente_2_datos",
       "agente": "A2",
       "proveedor": "Anthropic",
@@ -952,9 +952,9 @@
       "iteracion": 0
     },
     {
-      "fecha_hora": "2026-11-04T05:18:21.896Z",
-      "caso_id": "VAL-261104-KBSA",
-      "llamada_id": "VAL-261104-KBSA-L03",
+      "fecha_hora": "2026-11-05T02:03:13.330Z",
+      "caso_id": "VAL-261105-KALB",
+      "llamada_id": "VAL-261105-KALB-L03",
       "etapa": "agente_3_propuesta",
       "agente": "A3",
       "proveedor": "Anthropic",
@@ -968,9 +968,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:18:21.940Z",
-      "caso_id": "VAL-261104-KBSA",
-      "llamada_id": "VAL-261104-KBSA-L04",
+      "fecha_hora": "2026-11-05T02:03:13.380Z",
+      "caso_id": "VAL-261105-KALB",
+      "llamada_id": "VAL-261105-KALB-L04",
       "etapa": "agente_4_revision",
       "agente": "A4",
       "proveedor": "Anthropic",
@@ -984,9 +984,9 @@
       "iteracion": 1
     },
     {
-      "fecha_hora": "2026-11-04T05:18:22.881Z",
-      "caso_id": "VAL-261104-6PZZ",
-      "llamada_id": "VAL-261104-6PZZ-L01",
+      "fecha_hora": "2026-11-05T02:03:14.227Z",
+      "caso_id": "VAL-261105-5XB9",
+      "llamada_id": "VAL-261105-5XB9-L01",
       "etapa": "agente_1_intake",
       "agente": "A1",
       "proveedor": "Anthropic",
@@ -1002,7 +1002,7 @@
   ],
   "traza": [
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1011,10 +1011,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.079Z"
+      "timestamp": "2026-11-05T02:01:55.805Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1023,10 +1023,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.116Z"
+      "timestamp": "2026-11-05T02:01:55.839Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1035,34 +1035,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.117Z"
+      "timestamp": "2026-11-05T02:01:55.839Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-QYJ2-L01",
+      "llamada_id": "VAL-261105-3R7C-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.206Z"
+      "timestamp": "2026-11-05T02:01:55.949Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-QYJ2-L02",
+      "llamada_id": "VAL-261105-3R7C-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.263Z"
+      "timestamp": "2026-11-05T02:01:56.014Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1071,22 +1071,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:04.283Z"
+      "timestamp": "2026-11-05T02:01:56.036Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-QYJ2-L03",
+      "llamada_id": "VAL-261105-3R7C-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:04.319Z"
+      "timestamp": "2026-11-05T02:01:56.078Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -1095,22 +1095,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:04.358Z"
+      "timestamp": "2026-11-05T02:01:56.098Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-QYJ2-L04",
+      "llamada_id": "VAL-261105-3R7C-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:04.397Z"
+      "timestamp": "2026-11-05T02:01:56.135Z"
     },
     {
-      "caso_id": "VAL-261104-QYJ2",
+      "caso_id": "VAL-261105-3R7C",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -1119,10 +1119,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:04.411Z"
+      "timestamp": "2026-11-05T02:01:56.156Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1131,10 +1131,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.823Z"
+      "timestamp": "2026-11-05T02:01:56.554Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1143,10 +1143,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.848Z"
+      "timestamp": "2026-11-05T02:01:56.582Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1155,34 +1155,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.848Z"
+      "timestamp": "2026-11-05T02:01:56.582Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-8C8Q-L01",
+      "llamada_id": "VAL-261105-7TUX-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.893Z"
+      "timestamp": "2026-11-05T02:01:56.628Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-8C8Q-L02",
+      "llamada_id": "VAL-261105-7TUX-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:04.945Z"
+      "timestamp": "2026-11-05T02:01:56.675Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1191,22 +1191,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:04.961Z"
+      "timestamp": "2026-11-05T02:01:56.692Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-8C8Q-L03",
+      "llamada_id": "VAL-261105-7TUX-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:04.993Z"
+      "timestamp": "2026-11-05T02:01:56.726Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -1215,22 +1215,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.012Z"
+      "timestamp": "2026-11-05T02:01:56.748Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-8C8Q-L04",
+      "llamada_id": "VAL-261105-7TUX-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.049Z"
+      "timestamp": "2026-11-05T02:01:56.790Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -1239,10 +1239,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.074Z"
+      "timestamp": "2026-11-05T02:01:56.810Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1251,10 +1251,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:05.647Z"
+      "timestamp": "2026-11-05T02:01:57.405Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1263,10 +1263,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:05.666Z"
+      "timestamp": "2026-11-05T02:01:57.429Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1275,34 +1275,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:05.666Z"
+      "timestamp": "2026-11-05T02:01:57.429Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-ELUN-L01",
+      "llamada_id": "VAL-261105-5K8P-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:05.704Z"
+      "timestamp": "2026-11-05T02:01:57.478Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-ELUN-L02",
+      "llamada_id": "VAL-261105-5K8P-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:05.744Z"
+      "timestamp": "2026-11-05T02:01:57.534Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1311,22 +1311,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.759Z"
+      "timestamp": "2026-11-05T02:01:57.553Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-ELUN-L03",
+      "llamada_id": "VAL-261105-5K8P-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.785Z"
+      "timestamp": "2026-11-05T02:01:57.588Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -1335,22 +1335,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.799Z"
+      "timestamp": "2026-11-05T02:01:57.613Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-ELUN-L04",
+      "llamada_id": "VAL-261105-5K8P-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.825Z"
+      "timestamp": "2026-11-05T02:01:57.646Z"
     },
     {
-      "caso_id": "VAL-261104-ELUN",
+      "caso_id": "VAL-261105-5K8P",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -1359,10 +1359,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:05.838Z"
+      "timestamp": "2026-11-05T02:01:57.660Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1371,10 +1371,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:06.414Z"
+      "timestamp": "2026-11-05T02:01:58.202Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1383,10 +1383,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:06.435Z"
+      "timestamp": "2026-11-05T02:01:58.221Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1395,34 +1395,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:06.435Z"
+      "timestamp": "2026-11-05T02:01:58.221Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-YL7V-L01",
+      "llamada_id": "VAL-261105-3693-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:06.473Z"
+      "timestamp": "2026-11-05T02:01:58.276Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-YL7V-L02",
+      "llamada_id": "VAL-261105-3693-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:06.529Z"
+      "timestamp": "2026-11-05T02:01:58.322Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1431,22 +1431,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:06.545Z"
+      "timestamp": "2026-11-05T02:01:58.341Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-YL7V-L03",
+      "llamada_id": "VAL-261105-3693-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:06.583Z"
+      "timestamp": "2026-11-05T02:01:58.372Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "hallazgos",
@@ -1455,22 +1455,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:06.597Z"
+      "timestamp": "2026-11-05T02:01:58.389Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A4",
       "accion": "revision",
       "estado": "devuelto",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-YL7V-L04",
+      "llamada_id": "VAL-261105-3693-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:06.624Z"
+      "timestamp": "2026-11-05T02:01:58.418Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1479,22 +1479,22 @@
       "llamada_id": "",
       "version_propuesta": 2,
       "iteracion": 2,
-      "timestamp": "2026-11-04T05:17:06.636Z"
+      "timestamp": "2026-11-05T02:01:58.433Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-YL7V-L05",
+      "llamada_id": "VAL-261105-3693-L05",
       "version_propuesta": 2,
       "iteracion": 2,
-      "timestamp": "2026-11-04T05:17:06.662Z"
+      "timestamp": "2026-11-05T02:01:58.464Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -1503,22 +1503,22 @@
       "llamada_id": "",
       "version_propuesta": 2,
       "iteracion": 2,
-      "timestamp": "2026-11-04T05:17:06.676Z"
+      "timestamp": "2026-11-05T02:01:58.478Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-YL7V-L06",
+      "llamada_id": "VAL-261105-3693-L06",
       "version_propuesta": 2,
       "iteracion": 2,
-      "timestamp": "2026-11-04T05:17:06.701Z"
+      "timestamp": "2026-11-05T02:01:58.506Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -1527,10 +1527,10 @@
       "llamada_id": "",
       "version_propuesta": 2,
       "iteracion": 2,
-      "timestamp": "2026-11-04T05:17:06.713Z"
+      "timestamp": "2026-11-05T02:01:58.521Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1539,10 +1539,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:07.245Z"
+      "timestamp": "2026-11-05T02:01:59.025Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1551,10 +1551,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:07.266Z"
+      "timestamp": "2026-11-05T02:01:59.047Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1563,22 +1563,22 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:07.266Z"
+      "timestamp": "2026-11-05T02:01:59.047Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A1",
       "accion": "intake",
       "estado": "requiere_aclaracion",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-NSLU-L01",
+      "llamada_id": "VAL-261105-4B9F-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:07.305Z"
+      "timestamp": "2026-11-05T02:01:59.095Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "requiere_aclaracion",
@@ -1587,10 +1587,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:07.320Z"
+      "timestamp": "2026-11-05T02:01:59.110Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1599,10 +1599,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:08.096Z"
+      "timestamp": "2026-11-05T02:01:59.857Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1611,10 +1611,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:08.116Z"
+      "timestamp": "2026-11-05T02:01:59.876Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1623,34 +1623,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:08.116Z"
+      "timestamp": "2026-11-05T02:01:59.876Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-NSLU-L02",
+      "llamada_id": "VAL-261105-4B9F-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:08.154Z"
+      "timestamp": "2026-11-05T02:01:59.919Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-NSLU-L03",
+      "llamada_id": "VAL-261105-4B9F-L03",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:08.193Z"
+      "timestamp": "2026-11-05T02:01:59.974Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1659,22 +1659,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:08.207Z"
+      "timestamp": "2026-11-05T02:01:59.994Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-NSLU-L04",
+      "llamada_id": "VAL-261105-4B9F-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:08.243Z"
+      "timestamp": "2026-11-05T02:02:00.085Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -1683,22 +1683,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:08.258Z"
+      "timestamp": "2026-11-05T02:02:00.101Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-NSLU-L05",
+      "llamada_id": "VAL-261105-4B9F-L05",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:08.284Z"
+      "timestamp": "2026-11-05T02:02:00.133Z"
     },
     {
-      "caso_id": "VAL-261104-NSLU",
+      "caso_id": "VAL-261105-4B9F",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -1707,10 +1707,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:08.299Z"
+      "timestamp": "2026-11-05T02:02:00.145Z"
     },
     {
-      "caso_id": "VAL-261104-8C8Q",
+      "caso_id": "VAL-261105-7TUX",
       "agente": "GUARDRAIL",
       "accion": "rechazo_entrada",
       "estado": "rechazo_permiso",
@@ -1719,10 +1719,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:15.270Z"
+      "timestamp": "2026-11-05T02:02:06.945Z"
     },
     {
-      "caso_id": "VAL-261104-YL7V",
+      "caso_id": "VAL-261105-3693",
       "agente": "HUMANO",
       "accion": "decision_ap",
       "estado": "version_no_vigente",
@@ -1731,10 +1731,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:17.834Z"
+      "timestamp": "2026-11-05T02:02:09.538Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1743,10 +1743,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:19.517Z"
+      "timestamp": "2026-11-05T02:02:11.256Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1755,10 +1755,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:19.535Z"
+      "timestamp": "2026-11-05T02:02:11.284Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1767,34 +1767,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:19.535Z"
+      "timestamp": "2026-11-05T02:02:11.284Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-4A5X-L01",
+      "llamada_id": "VAL-261105-XSFV-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:19.570Z"
+      "timestamp": "2026-11-05T02:02:11.333Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-4A5X-L02",
+      "llamada_id": "VAL-261105-XSFV-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:19.606Z"
+      "timestamp": "2026-11-05T02:02:11.386Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1803,22 +1803,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:19.617Z"
+      "timestamp": "2026-11-05T02:02:11.406Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-4A5X-L03",
+      "llamada_id": "VAL-261105-XSFV-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:19.640Z"
+      "timestamp": "2026-11-05T02:02:11.443Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -1827,22 +1827,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:19.653Z"
+      "timestamp": "2026-11-05T02:02:11.459Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-4A5X-L04",
+      "llamada_id": "VAL-261105-XSFV-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:19.691Z"
+      "timestamp": "2026-11-05T02:02:11.488Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -1851,10 +1851,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:19.702Z"
+      "timestamp": "2026-11-05T02:02:11.502Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1863,10 +1863,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:20.311Z"
+      "timestamp": "2026-11-05T02:02:12.086Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1875,10 +1875,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:20.327Z"
+      "timestamp": "2026-11-05T02:02:12.107Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1887,34 +1887,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:20.327Z"
+      "timestamp": "2026-11-05T02:02:12.107Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-W3D7-L01",
+      "llamada_id": "VAL-261105-TUHN-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:20.359Z"
+      "timestamp": "2026-11-05T02:02:12.155Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-W3D7-L02",
+      "llamada_id": "VAL-261105-TUHN-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:20.393Z"
+      "timestamp": "2026-11-05T02:02:12.204Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -1923,22 +1923,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:20.412Z"
+      "timestamp": "2026-11-05T02:02:12.218Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-W3D7-L03",
+      "llamada_id": "VAL-261105-TUHN-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:20.434Z"
+      "timestamp": "2026-11-05T02:02:12.245Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -1947,22 +1947,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:20.459Z"
+      "timestamp": "2026-11-05T02:02:12.262Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-W3D7-L04",
+      "llamada_id": "VAL-261105-TUHN-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:20.486Z"
+      "timestamp": "2026-11-05T02:02:12.290Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -1971,10 +1971,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:20.502Z"
+      "timestamp": "2026-11-05T02:02:12.305Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -1983,10 +1983,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:21.122Z"
+      "timestamp": "2026-11-05T02:02:12.893Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -1995,10 +1995,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:21.143Z"
+      "timestamp": "2026-11-05T02:02:12.911Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2007,34 +2007,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:21.143Z"
+      "timestamp": "2026-11-05T02:02:12.911Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-Y84L-L01",
+      "llamada_id": "VAL-261105-DBZ3-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:21.176Z"
+      "timestamp": "2026-11-05T02:02:12.962Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-Y84L-L02",
+      "llamada_id": "VAL-261105-DBZ3-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:21.210Z"
+      "timestamp": "2026-11-05T02:02:13.007Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -2043,22 +2043,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:21.226Z"
+      "timestamp": "2026-11-05T02:02:13.023Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-Y84L-L03",
+      "llamada_id": "VAL-261105-DBZ3-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:21.256Z"
+      "timestamp": "2026-11-05T02:02:13.050Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -2067,22 +2067,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:21.267Z"
+      "timestamp": "2026-11-05T02:02:13.070Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-Y84L-L04",
+      "llamada_id": "VAL-261105-DBZ3-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:21.289Z"
+      "timestamp": "2026-11-05T02:02:13.096Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -2091,10 +2091,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:17:21.300Z"
+      "timestamp": "2026-11-05T02:02:13.109Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "HUMANO",
       "accion": "decision_ap",
       "estado": "aprobado_simulado",
@@ -2103,10 +2103,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:21.972Z"
+      "timestamp": "2026-11-05T02:02:13.770Z"
     },
     {
-      "caso_id": "VAL-261104-W3D7",
+      "caso_id": "VAL-261105-TUHN",
       "agente": "HUMANO",
       "accion": "decision_re",
       "estado": "rechazado",
@@ -2115,10 +2115,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:17:22.006Z"
+      "timestamp": "2026-11-05T02:02:13.811Z"
     },
     {
-      "caso_id": "VAL-261104-Y84L",
+      "caso_id": "VAL-261105-DBZ3",
       "agente": "HUMANO",
       "accion": "decision_ap",
       "estado": "expirado",
@@ -2127,10 +2127,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:10.698Z"
+      "timestamp": "2026-11-05T02:03:02.526Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -2139,10 +2139,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:13.607Z"
+      "timestamp": "2026-11-05T02:03:05.516Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2151,10 +2151,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:13.639Z"
+      "timestamp": "2026-11-05T02:03:05.555Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2163,34 +2163,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:13.639Z"
+      "timestamp": "2026-11-05T02:03:05.555Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-9P3K-L01",
+      "llamada_id": "VAL-261105-26Y3-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:13.691Z"
+      "timestamp": "2026-11-05T02:03:05.635Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-9P3K-L02",
+      "llamada_id": "VAL-261105-26Y3-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:13.751Z"
+      "timestamp": "2026-11-05T02:03:05.688Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -2199,22 +2199,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:13.796Z"
+      "timestamp": "2026-11-05T02:03:05.706Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-9P3K-L03",
+      "llamada_id": "VAL-261105-26Y3-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:13.838Z"
+      "timestamp": "2026-11-05T02:03:05.738Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -2223,22 +2223,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:13.855Z"
+      "timestamp": "2026-11-05T02:03:05.759Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-9P3K-L04",
+      "llamada_id": "VAL-261105-26Y3-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:13.881Z"
+      "timestamp": "2026-11-05T02:03:05.788Z"
     },
     {
-      "caso_id": "VAL-261104-9P3K",
+      "caso_id": "VAL-261105-26Y3",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -2247,10 +2247,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:13.893Z"
+      "timestamp": "2026-11-05T02:03:05.801Z"
     },
     {
-      "caso_id": "VAL-261104-4A5X",
+      "caso_id": "VAL-261105-XSFV",
       "agente": "HUMANO",
       "accion": "decision_ap",
       "estado": "no_pendiente",
@@ -2259,10 +2259,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:14.507Z"
+      "timestamp": "2026-11-05T02:03:06.410Z"
     },
     {
-      "caso_id": "VAL-261104-PCFC",
+      "caso_id": "VAL-261105-7YTW",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -2271,10 +2271,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:17.736Z"
+      "timestamp": "2026-11-05T02:03:09.675Z"
     },
     {
-      "caso_id": "VAL-261104-PCFC",
+      "caso_id": "VAL-261105-7YTW",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2283,10 +2283,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:17.757Z"
+      "timestamp": "2026-11-05T02:03:09.705Z"
     },
     {
-      "caso_id": "VAL-261104-PCFC",
+      "caso_id": "VAL-261105-7YTW",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2295,10 +2295,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:17.757Z"
+      "timestamp": "2026-11-05T02:03:09.705Z"
     },
     {
-      "caso_id": "VAL-261104-PCFC",
+      "caso_id": "VAL-261105-7YTW",
       "agente": "ORQ",
       "accion": "guardia",
       "estado": "detenido_presupuesto",
@@ -2307,10 +2307,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:17.768Z"
+      "timestamp": "2026-11-05T02:03:09.725Z"
     },
     {
-      "caso_id": "VAL-261104-PCFC",
+      "caso_id": "VAL-261105-7YTW",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "detenido_presupuesto",
@@ -2319,10 +2319,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:17.779Z"
+      "timestamp": "2026-11-05T02:03:09.744Z"
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -2331,10 +2331,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:18.737Z"
+      "timestamp": "2026-11-05T02:03:10.496Z"
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2343,10 +2343,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:18.754Z"
+      "timestamp": "2026-11-05T02:03:10.515Z"
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2355,22 +2355,22 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:18.754Z"
+      "timestamp": "2026-11-05T02:03:10.515Z"
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "agente": "A1",
       "accion": "intake",
       "estado": "error_api",
       "skill": "",
       "version_skill": "",
-      "llamada_id": "VAL-261104-BQWN-L01",
+      "llamada_id": "VAL-261105-ES7R-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:20.834Z"
+      "timestamp": "2026-11-05T02:03:12.582Z"
     },
     {
-      "caso_id": "VAL-261104-BQWN",
+      "caso_id": "VAL-261105-ES7R",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "error_api",
@@ -2379,10 +2379,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:20.847Z"
+      "timestamp": "2026-11-05T02:03:12.605Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -2391,10 +2391,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:21.730Z"
+      "timestamp": "2026-11-05T02:03:13.130Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2403,10 +2403,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:21.749Z"
+      "timestamp": "2026-11-05T02:03:13.160Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2415,34 +2415,34 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:21.749Z"
+      "timestamp": "2026-11-05T02:03:13.161Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A1",
       "accion": "intake",
       "estado": "completo",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-KBSA-L01",
+      "llamada_id": "VAL-261105-KALB-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:21.817Z"
+      "timestamp": "2026-11-05T02:03:13.221Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A2",
       "accion": "seleccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-KBSA-L02",
+      "llamada_id": "VAL-261105-KALB-L02",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:21.855Z"
+      "timestamp": "2026-11-05T02:03:13.278Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A3",
       "accion": "calculo",
       "estado": "ok",
@@ -2451,22 +2451,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:21.872Z"
+      "timestamp": "2026-11-05T02:03:13.297Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A3",
       "accion": "redaccion",
       "estado": "ok",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-KBSA-L03",
+      "llamada_id": "VAL-261105-KALB-L03",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:21.896Z"
+      "timestamp": "2026-11-05T02:03:13.330Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A4",
       "accion": "chequeos_codigo",
       "estado": "ok",
@@ -2475,22 +2475,22 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:21.909Z"
+      "timestamp": "2026-11-05T02:03:13.346Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "A4",
       "accion": "revision",
       "estado": "aprobado",
       "skill": "revision-cumplimiento",
       "version_skill": "1.0.0",
-      "llamada_id": "VAL-261104-KBSA-L04",
+      "llamada_id": "VAL-261105-KALB-L04",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:21.940Z"
+      "timestamp": "2026-11-05T02:03:13.381Z"
     },
     {
-      "caso_id": "VAL-261104-KBSA",
+      "caso_id": "VAL-261105-KALB",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "pendiente_aprobacion",
@@ -2499,10 +2499,10 @@
       "llamada_id": "",
       "version_propuesta": 1,
       "iteracion": 1,
-      "timestamp": "2026-11-04T05:18:21.954Z"
+      "timestamp": "2026-11-05T02:03:13.393Z"
     },
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "agente": "ORQ",
       "accion": "plan",
       "estado": "en_proceso",
@@ -2511,10 +2511,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:22.786Z"
+      "timestamp": "2026-11-05T02:03:14.174Z"
     },
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2523,10 +2523,10 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:22.805Z"
+      "timestamp": "2026-11-05T02:03:14.192Z"
     },
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "agente": "ORQ",
       "accion": "cargar_skill",
       "estado": "ok",
@@ -2535,22 +2535,22 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:22.805Z"
+      "timestamp": "2026-11-05T02:03:14.192Z"
     },
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "agente": "A1",
       "accion": "intake",
       "estado": "fuera_de_politica",
       "skill": "propuesta-portafolio",
       "version_skill": "1.1.0",
-      "llamada_id": "VAL-261104-6PZZ-L01",
+      "llamada_id": "VAL-261105-5XB9-L01",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:22.881Z"
+      "timestamp": "2026-11-05T02:03:14.227Z"
     },
     {
-      "caso_id": "VAL-261104-6PZZ",
+      "caso_id": "VAL-261105-5XB9",
       "agente": "ORQ",
       "accion": "cierre",
       "estado": "fuera_de_politica",
@@ -2559,7 +2559,7 @@
       "llamada_id": "",
       "version_propuesta": 0,
       "iteracion": 0,
-      "timestamp": "2026-11-04T05:18:22.896Z"
+      "timestamp": "2026-11-05T02:03:14.242Z"
     }
   ]
 }

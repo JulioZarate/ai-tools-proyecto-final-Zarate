@@ -129,7 +129,8 @@ function descargarSkill(name, pos, ruta_) {
 }
 function telegramEnviar(name, pos, conBotones = false) {
   if (MODO_TEST) return code(name, pos, 'campo_item', { "$input.first().json['CAMPO']": '({ enviado_simulado: true, ...$input.first().json })' });
-  const p = { chatId: '={{ $json.chat_id }}', text: '={{ $json.texto }}', additionalFields: { appendAttribution: false } };
+  // Telegram interpreta Markdown por defecto y falla con "_" (p. ej. max_tokens): se envía como HTML escapado.
+  const p = { chatId: '={{ $json.chat_id }}', text: "={{ String($json.texto).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') }}", additionalFields: { appendAttribution: false, parse_mode: 'HTML' } };
   if (conBotones) {
     p.replyMarkup = 'inlineKeyboard';
     p.inlineKeyboard = { rows: [{ row: { buttons: [

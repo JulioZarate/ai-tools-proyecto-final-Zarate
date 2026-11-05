@@ -1,7 +1,7 @@
 # Resumen de costos por etapa y por caso
 
 > Fuente de llamadas LLM: `datos/muestra/export_muestra.json` — **MUESTRA con simulador local: tokens simulados, no facturables.** Sustituir por la exportación real.
-> Fórmula por llamada: Cᵢ = (T_entrada × P_entrada + T_salida × P_salida) / 1 000 000, con P = 0.1 / 0.5 USD por millón (Claude Haiku 5.5). Generado: 2026-11-04T05:18 UTC.
+> Fórmula por llamada: Cᵢ = (T_entrada × P_entrada + T_salida × P_salida) / 1 000 000, con P = 0.1 / 0.5 USD por millón (Claude Haiku 5.5). Generado: 2026-11-05T02:03 UTC.
 
 ## Por etapa
 
@@ -20,19 +20,19 @@
 
 | Caso | Canal | Estado | Llamadas | Costo USD | Costo MXN |
 |---|---|---|---:|---:|---:|
-| VAL-261104-QYJ2 | telegram | pendiente_aprobacion | 4 | 0.000478 | 0.0083 |
-| VAL-261104-8C8Q | telegram | pendiente_aprobacion | 4 | 0.000515 | 0.0090 |
-| VAL-261104-ELUN | telegram | pendiente_aprobacion | 4 | 0.000553 | 0.0096 |
-| VAL-261104-YL7V | telegram | pendiente_aprobacion | 6 | 0.000863 | 0.0151 |
-| VAL-261104-NSLU | telegram | pendiente_aprobacion | 5 | 0.000610 | 0.0106 |
-| VAL-261104-4A5X | telegram | aprobado_simulado | 4 | 0.000523 | 0.0091 |
-| VAL-261104-W3D7 | telegram | rechazado | 4 | 0.000513 | 0.0089 |
-| VAL-261104-Y84L | telegram | expirado | 4 | 0.000561 | 0.0098 |
-| VAL-261104-9P3K | telegram | pendiente_aprobacion | 4 | 0.000513 | 0.0089 |
-| VAL-261104-PCFC | telegram | detenido_presupuesto | 0 | 0.000000 | 0.0000 |
-| VAL-261104-BQWN | telegram | error_api | 1 | 0.000000 | 0.0000 |
-| VAL-261104-KBSA | voz | pendiente_aprobacion | 4 | 0.000554 | 0.0097 |
-| VAL-261104-6PZZ | telegram | fuera_de_politica | 1 | 0.000072 | 0.0013 |
+| VAL-261105-3R7C | telegram | pendiente_aprobacion | 4 | 0.000478 | 0.0083 |
+| VAL-261105-7TUX | telegram | pendiente_aprobacion | 4 | 0.000515 | 0.0090 |
+| VAL-261105-5K8P | telegram | pendiente_aprobacion | 4 | 0.000553 | 0.0096 |
+| VAL-261105-3693 | telegram | pendiente_aprobacion | 6 | 0.000863 | 0.0151 |
+| VAL-261105-4B9F | telegram | pendiente_aprobacion | 5 | 0.000610 | 0.0106 |
+| VAL-261105-XSFV | telegram | aprobado_simulado | 4 | 0.000523 | 0.0091 |
+| VAL-261105-TUHN | telegram | rechazado | 4 | 0.000513 | 0.0089 |
+| VAL-261105-DBZ3 | telegram | expirado | 4 | 0.000561 | 0.0098 |
+| VAL-261105-26Y3 | telegram | pendiente_aprobacion | 4 | 0.000513 | 0.0089 |
+| VAL-261105-7YTW | telegram | detenido_presupuesto | 0 | 0.000000 | 0.0000 |
+| VAL-261105-ES7R | telegram | error_api | 1 | 0.000000 | 0.0000 |
+| VAL-261105-KALB | voz | pendiente_aprobacion | 4 | 0.000554 | 0.0097 |
+| VAL-261105-5XB9 | telegram | fuera_de_politica | 1 | 0.000072 | 0.0013 |
 
 ## Indicadores
 

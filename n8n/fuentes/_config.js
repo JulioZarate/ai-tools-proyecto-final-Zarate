@@ -16,14 +16,15 @@ const CONFIG = {
     salida_alta_usd_mtok: 2.50,
     fecha_consulta: '2026-11-03'
   },
-  presupuesto_caso_usd_default: 0.01,
-  presupuesto_caso_usd_max: 0.02,
+  presupuesto_caso_usd_default: 0.02,
+  presupuesto_caso_usd_max: 0.05,
   reserva_pct: 0.20,
   max_llamadas_caso: 10,
   max_iteraciones_calidad: 3,
   max_correcciones_a2: 1,
   tiempo_max_caso_ms: 120000,
-  max_tokens: { A1: 500, A2: 700, A3: 900, A4: 500 },
+  // Haiku 5.5 cuenta el razonamiento interno dentro de max_tokens: margen amplio para que siempre quede texto.
+  max_tokens: { A1: 2000, A2: 3000, A3: 3000, A4: 2000 },
   aprobacion_minutos: 30,
   usuarios: {
     'REEMPLAZAR_ID_TELEGRAM_ASESOR': 'asesor',
