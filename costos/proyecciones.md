@@ -1,16 +1,16 @@
 # Proyecciones mensuales (100 · 1 000 · 10 000 casos)
 
-> C_mes = cargos fijos mensuales + cargos variables no incluidos en el plan. Costo LLM por caso tomado de `costos/resumen.md` (**muestra simulada: rehacer con datos reales**): 0.000537 USD/caso.
+> C_mes = cargos fijos mensuales + cargos variables no incluidos en el plan. Costo LLM por caso tomado de `costos/resumen.md` (medido): 0.003590 USD/caso.
 > Supuestos declarados: % de casos por voz, minutos por conversación, ejecuciones de n8n por caso (/nuevo + botón + /estado), factor de LLM por más iteraciones del loop y reintentos. Minutos de voz incluidos en el plan: 15/mes (ajustar a tu plan). No se extrapola la prueba gratuita de n8n como permanente.
 
 | Escenario | Casos/mes | LLM agentes USD | Min voz | Voz USD (excedente + LLM voz) | Ejecuciones n8n | Plan n8n | n8n USD | GitHub + Telegram | **Total USD/mes** | Total MXN/mes | USD por caso |
 |---|---:|---:|---:|---:|---:|---|---:|---:|---:|---:|---:|
-| Base | 100 | 0.05 | 60 | 3.67 | 300 | Starter | 25.92 | 0.00 | **29.65** | 517 | 0.2965 |
-| Base | 1,000 | 0.54 | 600 | 47.52 | 3,000 | Pro | 64.80 | 0.00 | **112.86** | 1969 | 0.1129 |
-| Base | 10,000 | 5.37 | 6000 | 486.00 | 30,000 | Business (autohospedado) | 864.00 | 0.00 | **1355.37** | 23643 | 0.1355 |
-| Mayor consumo | 100 | 0.09 | 240 | 18.29 | 400 | Starter | 25.92 | 0.00 | **44.29** | 773 | 0.4429 |
-| Mayor consumo | 1,000 | 0.86 | 2400 | 193.68 | 4,000 | Pro | 64.80 | 0.00 | **259.34** | 4524 | 0.2593 |
-| Mayor consumo | 10,000 | 8.59 | 24000 | 1947.60 | 40,000 | Business (autohospedado) | 864.00 | 0.00 | **2820.19** | 49195 | 0.2820 |
+| Base | 100 | 0.36 | 60 | 3.67 | 300 | Starter | 25.92 | 0.00 | **29.95** | 522 | 0.2995 |
+| Base | 1,000 | 3.59 | 600 | 47.52 | 3,000 | Pro | 64.80 | 0.00 | **115.91** | 2022 | 0.1159 |
+| Base | 10,000 | 35.90 | 6000 | 486.00 | 30,000 | Business (autohospedado) | 864.00 | 0.00 | **1385.89** | 24176 | 0.1386 |
+| Mayor consumo | 100 | 0.57 | 240 | 18.29 | 400 | Starter | 25.92 | 0.00 | **44.78** | 781 | 0.4478 |
+| Mayor consumo | 1,000 | 5.74 | 2400 | 193.68 | 4,000 | Pro | 64.80 | 0.00 | **264.22** | 4609 | 0.2642 |
+| Mayor consumo | 10,000 | 57.43 | 24000 | 1947.60 | 40,000 | Business (autohospedado) | 864.00 | 0.00 | **2869.03** | 50047 | 0.2869 |
 
 ## Lectura para decidir
 
