@@ -73,7 +73,7 @@ Descripción: "Registra una solicitud de propuesta informativa de portafolio (da
 
 1. Copia el **agent ID público** y reemplaza `REEMPLAZAR_AGENT_ID_ELEVENLABS` en el atributo `data-agent-id` del `<body>`.
 2. Reemplaza `REEMPLAZAR_USUARIO_BOT` por el usuario del bot (sin @) para la alternativa textual.
-3. El widget **solo se carga** después de que la persona marca el consentimiento y concede el micrófono (`web/assets/app.js`, función `activarVoz`). Script oficial: `https://unpkg.com/@elevenlabs/convai-widget-embed`.
+3. El widget **solo se carga** después de que la persona marca el consentimiento (`web/assets/app.js`, función `activarVoz`). Si niega el micrófono, se muestra un aviso y el widget se carga en modo texto; también se ofrece Telegram como alternativa. Script oficial: `https://unpkg.com/@elevenlabs/convai-widget-embed`.
 
 ## 7. Pruebas obligatorias (P03, P13)
 

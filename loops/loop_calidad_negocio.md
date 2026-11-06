@@ -40,7 +40,29 @@ Se activó `demo=falla_v1`, que inyecta un defecto declarado en la redacción V1
 | 2 | V2 | L05 (A3), L06 (A4) | ninguno | **aprobado** | **0.000282** (costo de la corrección) |
 
 Después, el botón de aprobación de V1 fue rechazado por el servidor (`HUMANO decision_ap → version_no_vigente`).
-Fuente: `evidencias/local/export_local.json` (traza y costos). **Repetir en n8n Cloud** con `/nuevo perfil moderado, 500 mil pesos a 10 años, objetivo: patrimonio demo=falla_v1` y pegar el nuevo `caso_id` aquí.
+Fuente: `evidencias/local/export_local.json` (traza y costos).
+
+## Evidencia V1 → V2 en n8n Cloud con IA real (caso `VAL-261105-YQZY`, sin demo)
+
+| Iteración | Versión | Llamadas | Diagnóstico (traza) | Veredicto | Costo (USD, medido) |
+|---|---|---|---|---|---|
+| 1 | V1 | L03 (A3), L04 (A4) | `A4 chequeos_codigo → hallazgos` (02:24:41 UTC) | **devuelto** | 0.001961 |
+| 2 | V2 | L05 (A3), L06 (A4) | `A4 chequeos_codigo → ok` (02:24:54 UTC) | **aprobado** | **0.001953** (costo adicional de la corrección) |
+
+- Dato: el mismo `caso_id` conserva V1 y V2; el asesor aprobó V2 (`HUMANO decision_ap → aprobado_simulado`). Captura `evidencias/cloud/capturas/22`.
+- Límite: la traza pública registra que hubo hallazgos, pero no qué regla R1–R10 falló (el detalle queda en el registro privado). Que la causa fuera de redacción es inferencia.
+- Fuente: `datos/export/export_sanitizado.json` (traza y costos).
+
+## Reutilización con otros casos (mismo método, mismas versiones)
+
+| Caso | Canal | `cargar_skill` en traza | Resultado |
+|---|---|---|---|
+| VAL-261105-YQZY | Telegram | propuesta-portafolio 1.1.1 · revision-cumplimiento 1.0.1 | V1 devuelta → V2 aprobada |
+| VAL-261105-AQJJ | Telegram | mismas versiones | V1 aprobada por A4 → rechazada por el asesor |
+| VAL-261105-F66J | Telegram | mismas versiones | V1 aprobada por A4 → expirada |
+| VAL-261105-4DM3 | Voz | mismas versiones | V1 aprobada por A4 → aprobada por el asesor |
+
+Cuatro casos con perfiles, montos y horizontes distintos usaron los mismos dos skills sin cambios. El loop solo iteró cuando la revisión encontró hallazgos (1 de 4).
 
 ## Bitácora antes / después (prompt libre vs. skill + loop)
 

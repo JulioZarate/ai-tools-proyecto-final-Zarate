@@ -85,7 +85,7 @@ Otros comandos: `/ayuda`, `/estado FOLIO`, `/aclarar FOLIO <dato>`. Parámetros 
 ## Validación
 
 ```bash
-node --test tests/unit/*.test.mjs        # 15 pruebas: reglas, skills, KPIs, costos, sincronía n8n, secretos
+node --test tests/unit/*.test.mjs        # 16 pruebas: reglas, skills, KPIs, costos, sincronía n8n, secretos
 node n8n/build_workflows.mjs --check     # los JSON coinciden con n8n/fuentes y agentes/
 node scripts/construir_sitio.mjs         # empaqueta _site y escanea secretos
 # Integración local opcional (n8n real + simulador de Anthropic, sin costo):
