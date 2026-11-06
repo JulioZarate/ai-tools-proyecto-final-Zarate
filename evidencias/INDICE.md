@@ -17,10 +17,10 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
 |---|---|---|---|
 | 1 | Caso e integración (5) | `docs/caso.md`, `docs/arquitectura.md` (mapa + `caso_id` compartido) | ✅ |
 | 2 | Ecosistema agéntico (15) | `agentes/*.md` (5 roles), contratos `agentes/*.schema.json`, traza de un caso con A1–A4 (`evidencias/local/export_local.json`) | 🟡 exportar traza de Cloud a `evidencias/cloud/` |
-| 3 | n8n y Telegram (12) | `n8n/WF*.json`, README §Instalación, P01/P04/P05/P10; ejecuciones exitosa y de error | 🟡 capturas de ejecución en Cloud |
-| 4 | Pages y Actions (10) | `.github/workflows/validar-y-publicar.yml`, `scripts/construir_sitio.mjs`, P12, `scripts/exportar.sh` | ⬜ enlaces de ejecuciones |
+| 3 | n8n y Telegram (12) | `n8n/WF*.json`, README §Instalación, P01/P04/P05/P10; ejecuciones exitosa y de error | ✅ capturas `cloud/capturas/01`, `02`, `16` |
+| 4 | Pages y Actions (10) | `.github/workflows/validar-y-publicar.yml`, `scripts/construir_sitio.mjs`, P12, `scripts/exportar.sh` | ✅ runs 42107492452 (bloqueado), 42107774901 y 42108643600 (ok); captura `17` |
 | 5 | Skills y loops (10) | `skills/*/SKILL.md` + ejemplos, `loops/*.md` (V1→V2, bitácora), carga con huella en `valoria_traza` | 🟡 repetir P11 en Cloud y reutilización con 2.º caso |
-| 6 | ElevenLabs y VizData (14) | `docs/elevenlabs.md`, `web/`, P03, P13, capturas a 390/1366 en `evidencias/local/` | ⬜ voz real conectada |
+| 6 | ElevenLabs y VizData (14) | `docs/elevenlabs.md`, `web/`, P03, P13, capturas a 390/1366 en `evidencias/local/` | ✅ voz real conectada; capturas `03`–`09` |
 | 7 | Guardrails (12) | `n8n/fuentes/normalizar_entrada.js`, `_util.js` (guardia), `validar_decision.js`, P04/P06/P07/P08/P09/P10 | 🟡 |
 | 8 | Tokenización y costos (10) | `costos/tarifas.csv`, `costos/costos.csv`, `costos/resumen.md`, `costos/proyecciones.md` | 🟡 recalcular con export real |
 | 9 | Pruebas y reproducibilidad (7) | `tests/pruebas.csv`, `tests/unit/`, `tests/n8n_local/`, README, `docs/declaracion_uso_ia.md` | 🟡 |
@@ -30,7 +30,15 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
 - `cloud/resultados_cloud.json` — resultados P01, P02, P03, P04 (parcial), P06, P08, P11, P12, P13, P14 y hallazgos corregidos.
 - `../datos/export/export_sanitizado.json` — exportación real: 6 casos (5 Telegram, 1 voz), 23 llamadas LLM, 60 pasos de traza.
 - Casos clave: VAL-261105-YQZY (completo, V1→V2 natural), VAL-261105-AQJJ (rechazado), VAL-261105-F66J (vencimiento), VAL-261105-4DM3 (voz), VAL-261104-ZCGU y VAL-261105-MPWJ (fallas controladas y corregidas).
-- Capturas a guardar en `cloud/`: Telegram (aprobación, rechazo, bloqueo), ElevenLabs (Preview y widget en Pages), n8n (ejecución con A1–A4).
+- Capturas en `cloud/capturas/` (reales, 5–6 nov 2026):
+  - `01` P10: segundo clic sobre 4DM3 ya aprobado → "No se ejecutó nada".
+  - `02` P04: vencimiento de F66J → expirado, sin acción.
+  - `03`, `04` Andrea consulta YQZY (v2 aprobado) y 4DM3 (caso creado por voz, aprobado).
+  - `05` widget en GitHub Pages; `06` guardrail: folio "BAL…" mal dictado → Andrea pide confirmar "VAL…" antes de consultar.
+  - `07`–`09` configuración: widget, header secreto `x-valoria-key`, parámetros del cuerpo.
+  - `10`–`13` hallazgos corregidos: `crear_caso` fallaba en 460 ms (método GET, parámetros en query, identificador con carácter oculto, descripción vacía).
+  - `14` estado inicial de herramientas; `15` n8n Cloud (21/1,000 ejecuciones de prueba); `16` WF1 publicado; `17` Action "Actualizar datos" exitosa.
+  - Datos personales recortados (correo en `15`).
 
 ## Evidencias locales disponibles
 - `local/resultado_integracion_local.json` — 12/12 escenarios (n8n 2.46.4 + simulador de API).

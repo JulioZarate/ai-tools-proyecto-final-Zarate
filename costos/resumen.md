@@ -1,7 +1,7 @@
 # Resumen de costos por etapa y por caso
 
 > Fuente de llamadas LLM: `datos/export/export_sanitizado.json` (medido por la API de Anthropic en n8n Cloud).
-> Fórmula por llamada: Cᵢ = (T_entrada × P_entrada + T_salida × P_salida) / 1 000 000, con P = 0.1 / 0.5 USD por millón (Claude Haiku 5.5). Generado: 2026-11-05T21:00 UTC.
+> Fórmula por llamada: Cᵢ = (T_entrada × P_entrada + T_salida × P_salida) / 1 000 000, con P = 0.1 / 0.5 USD por millón (Claude Haiku 5.5). Generado: 2026-11-06T17:57 UTC.
 
 ## Por etapa
 
@@ -10,11 +10,12 @@
 | diseno_construccion | 1 | 0 | 0 | 0.000000 | no aplica |
 | publicacion_operacion | 2 | 0 | 0 | 0.000000 | no aplica |
 | telegram_n8n | 1 | 0 | 0 | 0.000000 | no aplica |
+| voz_elevenlabs | 1 | 0 | 0 | 0.001100 | no aplica |
 | agente_1_intake | 6 | 4264 | 1742 | 0.001299 | sí |
 | agente_2_datos | 7 | 11361 | 13631 | 0.007951 | sí |
 | agente_3_propuesta | 5 | 8275 | 7843 | 0.004750 | sí |
 | agente_4_revision | 5 | 10144 | 5828 | 0.003929 | sí |
-| **Total** | 27 | | | **0.017929** | |
+| **Total** | 28 | | | **0.019029** | |
 
 ## Por caso
 
