@@ -38,6 +38,7 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
   - `07`–`09` configuración: widget, header secreto `x-valoria-key`, parámetros del cuerpo.
   - `10`–`13` hallazgos corregidos: `crear_caso` fallaba en 460 ms (método GET, parámetros en query, identificador con carácter oculto, descripción vacía).
   - `14` estado inicial de herramientas; `15` n8n Cloud (21/1,000 ejecuciones de prueba); `16` WF1 publicado; `17` Action "Actualizar datos" exitosa.
+  - `18` lista de conversaciones de voz (duraciones para costos); `19` panel publicado con datos reales a 390 y 1366 px.
   - Datos personales recortados (correo en `15`).
 
 ## Evidencias locales disponibles
