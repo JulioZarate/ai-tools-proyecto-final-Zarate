@@ -1,7 +1,7 @@
 # Informe técnico y empresarial · Valoria: propuestas informativas con orquestador y cuatro agentes
 
 **Proyecto final individual · AI Tools · Dra. Elda C. Morales**
-**Autor:** Julio Alejandro Zárate García · **Versión del repositorio:** v1.0 (rama `main`, tag `entrega`) · **Fecha:** 6 de noviembre de 2026
+**Autor:** Julio Alejandro Zárate García · **Versión del repositorio:** v1.0 (rama `main`) · **Fecha:** 6 de noviembre de 2026
 
 > Nota de fuentes: los resultados de la sección 7.2 y los costos de la sección 8 provienen del entorno real (n8n Cloud + API de Anthropic, 4–5 de noviembre de 2026); los de la sección 7.1, de la integración local con simulador, y se identifican como tales. El uso de IA en el desarrollo se declara en `docs/declaracion_uso_ia.md`.
 
