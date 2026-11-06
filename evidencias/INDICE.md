@@ -12,6 +12,8 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
 | Bot de Telegram | ✅ @IAtoolFJZbot (acceso por canal privado del curso; sin token) |
 | Video de respaldo (5–8 min) | ⬜ [enlace] |
 
+**Estado de entrega:** rama `main`, tag `entrega` (el hash exacto aparece en GitHub → Tags y en el comentario del ZIP). Informe: `docs/informe.pdf` (9 páginas) y `docs/informe.docx`.
+
 ## Rúbrica → evidencia
 | # | Criterio (pts) | Evidencia | Estado |
 |---|---|---|---|

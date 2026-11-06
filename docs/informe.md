@@ -1,9 +1,9 @@
 # Informe técnico y empresarial · Valoria: propuestas informativas con orquestador y cuatro agentes
 
 **Proyecto final individual · AI Tools · Dra. Elda C. Morales**
-**Autor:** Julio Alejandro Zárate García · **Versión del repositorio:** v1.0 · **Fecha:** [AAAA-MM-DD de entrega]
+**Autor:** Julio Alejandro Zárate García · **Versión del repositorio:** v1.0 (rama `main`, tag `entrega`) · **Fecha:** 6 de noviembre de 2026
 
-> Borrador generado con apoyo de IA y revisado por el autor. Los resultados de la sección 7.2 y los costos de la sección 8 provienen del entorno real (n8n Cloud + API de Anthropic, 4–5 de noviembre de 2026); los de la sección 7.1, de la integración local con simulador, y se identifican como tales.
+> Nota de fuentes: los resultados de la sección 7.2 y los costos de la sección 8 provienen del entorno real (n8n Cloud + API de Anthropic, 4–5 de noviembre de 2026); los de la sección 7.1, de la integración local con simulador, y se identifican como tales. El uso de IA en el desarrollo se declara en `docs/declaracion_uso_ia.md`.
 
 ---
 
@@ -59,9 +59,13 @@ Todo es ficticio: catálogo `VALORIA-CAT v1.0.0` con 16 instrumentos (incluye do
 | Fallas y duplicados | Reintentos acotados, `error_api` honesto, dedupe persistente | P08, P10 |
 | Trazabilidad | `caso_id`, versión, `llamada_id`, skill y huella en cada paso | P14 |
 
+![Figura 1. Inyección bloqueada antes de llegar al modelo (P06) y aprobación con botones ligados a caso y versión.](../evidencias/cloud/capturas/24_telegram_P06_inyeccion_bloqueada.jpg){width=38%}
+
 ## 6. Visualización (VizData)
 
 El panel responde a la pregunta del asesor: *¿qué tan confiable y costoso es el proceso, y dónde se detienen los casos?* Tres KPI con fórmula, unidad y denominador visibles; la gráfica principal es de **barras horizontales ordenadas** (dato nominal + conteo; base en cero; etiquetas directas) con color que codifica el grupo de cierre (azul: llegó a propuesta/decisión; gris: control; naranja: falla — paleta segura para daltonismo y acompañada de texto). La segunda gráfica muestra el costo por agente. Ambas tienen alternativa en tabla. El historial sanitizado tiene filtros y botón de restablecer. Estados implementados: carga, error, vacío, sin resultados y datos desactualizados (> 7 días) o muestra. Probado a 390 y 1366 px sin desplazamiento horizontal y con foco visible.
+
+![Figura 2. Panel publicado en GitHub Pages con la exportación real (1366 px).](../evidencias/cloud/capturas/19_panel_1366_datos_reales.png){width=88%}
 
 ## 7. Resultados medidos
 
@@ -87,6 +91,8 @@ Muestra: 6 casos registrados (5 por Telegram, 1 por voz), 23 llamadas al modelo,
 | Costo variable por caso completado | **0.00359 USD** (≈ 0.063 MXN) | 4 completados | Fallidos aparte: 0.003571 USD en 2 casos |
 
 Otras pruebas en el entorno real: inyección bloqueada antes del modelo (P06), segundo clic sobre un caso ya aprobado sin efecto (P10), publicación bloqueada por una regla incorrecta y recuperada (P12, ejecuciones 42107492452 y 42107774901), alternativa textual con micrófono denegado (P13). Los dos casos fallidos dieron dos correcciones al sistema: mensajes de Telegram en HTML escapado y `max_tokens` mayor (ZCGU), y liquidez completada por código con supuesto explícito (MPWJ; skill 1.1.1). Detalle: `evidencias/cloud/resultados_cloud.json` y `tests/pruebas.csv`.
+
+![Figura 3. Loop de calidad real: YQZY v2 aprobada por el asesor (izq.); Andrea consulta por voz el caso 4DM3, creado por voz (der.).](../evidencias/cloud/capturas/22_telegram_P11_YQZY_v2_aprobado.jpg){width=30%} ![](../evidencias/cloud/capturas/04_eleven_consulta_4DM3_aprobado.png){width=62%}
 
 ## 8. Costos
 
