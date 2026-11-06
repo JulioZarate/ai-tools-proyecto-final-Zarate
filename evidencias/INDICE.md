@@ -39,7 +39,9 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
   - `10`–`13` hallazgos corregidos: `crear_caso` fallaba en 460 ms (método GET, parámetros en query, identificador con carácter oculto, descripción vacía).
   - `14` estado inicial de herramientas; `15` n8n Cloud (21/1,000 ejecuciones de prueba); `16` WF1 publicado; `17` Action "Actualizar datos" exitosa.
   - `18` lista de conversaciones de voz (duraciones para costos); `19` panel publicado con datos reales a 390 y 1366 px.
-  - Datos personales recortados (correo en `15`).
+  - `20`–`24` Telegram (4 nov): `/ayuda` y `/nuevo` (P01), rechazo AQJJ y caso F66J (P02/P04), YQZY v2 aprobado (P11), `/estado` y folio inválido, inyección bloqueada (P06).
+  - `25` ejecución exitosa en n8n Cloud; `26` rama de error del caso ZCGU (A2 sin texto por `max_tokens` → `error_api`, mensaje comprensible; el envío falló por formato y se corrigió con HTML); `27` Data tables; `28` Action "Validar y publicar".
+  - Datos personales recortados (correo en `15`, ID de Telegram difuminado en `26`).
 
 ## Evidencias locales disponibles
 - `local/resultado_integracion_local.json` — 12/12 escenarios (n8n 2.46.4 + simulador de API).
