@@ -43,6 +43,7 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
   - `18` lista de conversaciones de voz (duraciones para costos); `19` panel publicado con datos reales a 390 y 1366 px.
   - `20`–`24` Telegram (4 nov): `/ayuda` y `/nuevo` (P01), rechazo AQJJ y caso F66J (P02/P04), YQZY v2 aprobado (P11), `/estado` y folio inválido, inyección bloqueada (P06).
   - `25` ejecución exitosa en n8n Cloud; `26` rama de error del caso ZCGU (A2 sin texto por `max_tokens` → `error_api`, mensaje comprensible; el envío falló por formato y se corrigió con HTML); `27` Data tables; `28` Action "Validar y publicar".
+  - `29` P05 en la nube (6 nov): `/nuevo` vacío → el bot pide los datos con un ejemplo, sin inventar campos ni llamar al modelo.
   - Datos personales recortados (correo en `15`, ID de Telegram difuminado en `26`).
 
 ## Evidencias locales disponibles
