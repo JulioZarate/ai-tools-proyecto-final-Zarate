@@ -11,6 +11,14 @@ Voz (Pages + ElevenLabs) ─┘     (Data Tables: casos, eventos, costos, traza)
 n8n export sanitizado → commit → GitHub Actions (pruebas + escaneo) → GitHub Pages (panel + voz)
 ```
 
+## Entrega
+
+- Repositorio: https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate (rama `main`)
+- Página publicada (panel y Andrea): https://juliozarate.github.io/ai-tools-proyecto-final-Zarate/
+- Bot de Telegram: @IAtoolFJZbot
+- Video de respaldo: https://youtu.be/CxJklzo7ElI
+- Informe: `docs/informe.pdf` · Índice de evidencias: `evidencias/INDICE.md`
+
 ## Dónde corre cada componente
 
 | Componente | Dónde | Archivo |

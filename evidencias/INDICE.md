@@ -5,14 +5,14 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
 ## Enlaces de entrega
 | Elemento | Enlace |
 |---|---|
-| Repositorio (rama `main`, commit final) | ✅ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate · commit final `[anotar al entregar]` |
+| Repositorio (rama `main`, commit final) | ✅ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate · commit final: ver el comentario del ZIP |
 | Sitio GitHub Pages | ✅ https://juliozarate.github.io/ai-tools-proyecto-final-Zarate/ |
 | Ejecución de Actions exitosa | ✅ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate/actions/runs/42107774901 · actualización de datos: https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate/actions/runs/42107210567 |
 | Ejecución de Actions bloqueada por falla deliberada (P12) | ✅ https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate/actions/runs/42107492452 |
 | Bot de Telegram | ✅ @IAtoolFJZbot (acceso por canal privado del curso; sin token) |
-| Video de respaldo (5–8 min) | ⬜ [enlace] |
+| Video de respaldo (5–8 min) | ✅ https://youtu.be/CxJklzo7ElI |
 
-**Estado de entrega:** rama `main`; el commit final se indica en el comentario del ZIP y en el mensaje de entrega. Informe: `docs/informe.pdf` (10 páginas) y `docs/informe.docx`.
+**Estado de entrega:** rama `main`; el commit final se indica en el comentario del ZIP y en el mensaje de entrega. Informe final: `docs/informe.pdf` (11 páginas con portada; fuente en `docs/informe.md`).
 
 ## Rúbrica → evidencia
 | # | Criterio (pts) | Evidencia | Estado |
@@ -26,7 +26,7 @@ Estado: ✅ listo en el repo · 🟡 listo localmente, repetir en Cloud · ⬜ l
 | 7 | Guardrails (12) | `n8n/fuentes/normalizar_entrada.js`, `_util.js` (guardia), `validar_decision.js`, P04/P06/P07/P08/P09/P10 | ✅ capturas `01`, `02`, `06`, `24`, `26` |
 | 8 | Tokenización y costos (10) | `costos/tarifas.csv`, `costos/costos.csv`, `costos/resumen.md`, `costos/proyecciones.md` | ✅ recalculado con export real + 6 conversaciones de voz |
 | 9 | Pruebas y reproducibilidad (7) | `tests/pruebas.csv`, `tests/unit/`, `tests/n8n_local/`, README, `docs/declaracion_uso_ia.md` | ✅ P01–P14 aprobadas con evidencia |
-| 10 | Defensa (5) | Guion en `docs/guion_defensa.md` | ⬜ video de respaldo pendiente |
+| 10 | Defensa (5) | Guion en `docs/guion_defensa.md`; video de respaldo https://youtu.be/CxJklzo7ElI | ✅ video entregado; demostración en vivo el día de la defensa |
 
 ## Evidencias en el entorno real (n8n Cloud + API de Anthropic)
 - `cloud/resultados_cloud.json` — resultados P01, P02, P03, P04 (parcial), P06, P08, P11, P12, P13, P14 y hallazgos corregidos.

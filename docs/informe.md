@@ -147,3 +147,13 @@ Antes de usar datos reales validaría la autorización y el consentimiento de lo
 ## 12. Referencias
 
 Se usaron las fuentes oficiales listadas en la guía del proyecto (referencias 1 a 13): Telegram Bot API; n8n Telegram Trigger y Webhook; GitHub Pages y GitHub Actions; ElevenLabs widget, webhook tools, autenticación y precios; W3C WCAG, y precios de n8n. Las tarifas y sus fechas de consulta están en costos/tarifas.csv, y la declaración de uso de IA en docs/declaracion_uso_ia.md.
+
+## 12. Enlaces del proyecto
+
+**Repositorio:** https://github.com/JulioZarate/ai-tools-proyecto-final-Zarate
+
+**Página publicada (panel y Andrea):** https://juliozarate.github.io/ai-tools-proyecto-final-Zarate/
+
+**Bot de Telegram:** @IAtoolFJZbot
+
+**Video de respaldo:** https://youtu.be/CxJklzo7ElI
